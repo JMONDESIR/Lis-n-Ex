@@ -18,21 +18,38 @@
 
   #dashboard {
   font-family: 'Monserat', sans-serif;
+  overflow-x: scroll;
   }
 
-  .displayCard {
-    margin: 5px;
+  .title__gallery {
     width: 200px;
-    height: 200px;
-    border-radius: 4px;
-    border: 1px solid;
+    height: 300px;
     display: inline-block;
   }
 
   .displayCardAddButton {
+    display: flex;
+    justify-content: center;
     margin: auto;
     width: 170px;
     height: 20px;
     background-color:  orangered;
     border-radius: 4px;
   }
+
+  .genreArt {
+    -webkit-box-shadow: 7px 7px 16px -1px rgba(176,95,81,0.74);
+    -moz-box-shadow: 7px 7px 16px -1px rgba(176,95,81,0.74);
+    box-shadow: 7px 7px 16px -1px rgba(176,95,81,0.74);
+    width: 100px;
+    height: 100px;
+    margin: 6px;
+    border: 1px;
+  }
+
+  .cardTitle{
+    text-align: center;
+  }
+
+
+

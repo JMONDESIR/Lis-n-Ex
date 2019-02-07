@@ -4,8 +4,9 @@ import card from "./card"
 const stationList = {
   showCards() {
 
-    API.getAllStations()
+    API.getAllCategories()
       .then(allStations => {
+        console.log(allStations)
         let stationFragment = document.createDocumentFragment()
 
         allStations.forEach(eachStation => {

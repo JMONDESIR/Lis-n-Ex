@@ -1,22 +1,32 @@
+import stationList from "./stationList"
 
 const card = {
 
-  cardBuilder(cardObject) {
-    let displayCard = document.createElement("div")
-    displayCard.setAttribute("id", "displayCard")
+  cardBuilder(eachStation) {
+    // DASHBOARD AND GALLERY
+    const dashboard = document.querySelector("#dashboard")
+    const displayArea = document.createElement("div")
 
-    let cardTitle = document.createElement("p")
-    cardTitle.textContent = "Title"
+    displayArea.setAttribute("class", "title__gallery")
 
-    let cardDescription = document.createElement("p")
-    cardDescription.textContent = "This is a description"
+    // STATION DISPLAY CARDS
+    const displayCard = document.createElement("span")
+    const cardTitle = document.createElement("h4")
+    displayCard.setAttribute("class", "displayCard")
+    cardTitle.setAttribute("class", "cardTitle")
+    cardTitle.textContent = eachStation.title
+    // displayCard.style.backgroundImage = eachStation.img
 
+    // STATION ADD BUTTON
     const displayCardAddButton = document.createElement("button")
     displayCardAddButton.setAttribute("class", "displayCardAddButton")
+    displayCardAddButton.textContent = "VIEW STATIONS"
 
-    displayCard.appendChild(cardTitle)
-    displayCard.appendChild(cardDescription)
-    displayCard.appendChild(displayCardAddButton)
+    // APPENDING ITEMS TO DOM
+    dashboard.appendChild(displayArea)
+    displayArea.appendChild(cardTitle)
+    displayArea.appendChild(displayCardAddButton)
+    displayArea.appendChild(displayCard)
 
     return displayCard
   }
