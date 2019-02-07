@@ -14,9 +14,9 @@ const stationList = {
           stationFragment.appendChild(stationCard)
         })
 
-        const outputArticle = document.querySelector("#dashboard")
+        const dashboard = document.querySelector("#dashboard")
 
-        outputArticle.appendChild(stationFragment)
+        dashboard.appendChild(stationFragment)
       })
   }
 }

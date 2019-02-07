@@ -9,7 +9,10 @@ const API = {
   },
   getStationsByCategoryId(id) {
     return fetch(`${baseURL}category/${id}/stations${token}`)
-      .ther(response => response.json())
+      .then(response => response.json())
+  },
+  addStation() {
+    return fetch()
   }
 }
 export default API

@@ -21,10 +21,18 @@ navBar.appendChild(menu)
 menu.appendChild(home)
 menu.appendChild(library)
 
-// DASHBOARD
-const dashboard = document.querySelector("#dashboard")
+// DASHBOARD & CASE
+const dashboardHead = document.querySelector("#dashboardHead")
 const dashboardHeading = document.createElement("h2")
 dashboardHeading.textContent = "STATIONS"
-dashboard.appendChild(dashboardHeading)
+dashboardHead.appendChild(dashboardHeading)
+
+
+// PANEL & CASE
+const panelHead = document.querySelector("#panelHead")
+const panelHeading = document.createElement("h2")
+panelHeading.textContent = "MY STATIONS"
+panelHead.appendChild(panelHeading)
+
 
 stationList.showCards()

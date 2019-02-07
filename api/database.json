@@ -19,36 +19,10 @@
       "username": "The Joker"
     }
   ],
-  "stations": [
+  "userSavedStations": [
     {
       "id": 1,
-      "genre": "Jazz Fusion",
-      "url": "https://www.youtube.com/watch?v=2vg6jJ3nv4s",
-      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9tucWOGbyKDJClMZj7XKUuZ_76BwjwmCgYFlA8Ihse-gf1MQCw",
-      "title": "Acid Jazz",
-      "description": "Dave Weckl, Chick Corea, Cassiopia, all your favorites in one place",
-      "userId": 1
-    },
-    {
-      "id": 2,
-      "genre": "latin",
-      "url": "https://www.youtube.com/watch?v=_4NBD3SqBwg",
-      "img": "http://i1184.photobucket.com/albums/z329/minegott/GENERIC/Music%20and%20Dance/1latin_zpsxfeywa9y.jpg",
-      "title": "Dulce Calor Latino",
-      "description": "Classic hits from the best latin artists!",
-      "userId": 2
-    },
-    {
-      "id": 3,
-      "genre": "Pop",
-      "url": "https://www.youtube.com/watch?v=qFLhGq0060w",
-      "img": "https://images.icanvas.com/list-square/pop-music.jpg",
-      "title": "Pop Magic",
-      "description": "Get your dance on with these great American hits",
-      "userId": 3
+      "stationId": 1
     }
-  ],
-  "messages": [
-    {}
   ]
 }
