@@ -1,11 +1,13 @@
 import API from "./stationCollection"
 import card from "./card"
+import form from "./form"
 
 const stationList = {
   showCards() {
 
-    API.getAllStations()
+    API.getAllCategories()
       .then(allStations => {
+        console.log(allStations)
         let stationFragment = document.createDocumentFragment()
 
         allStations.forEach(eachStation => {
@@ -13,9 +15,21 @@ const stationList = {
           stationFragment.appendChild(stationCard)
         })
 
-        const outputArticle = document.querySelector("#dashboard")
+        const dashboard = document.querySelector("#dashboard")
 
-        outputArticle.appendChild(stationFragment)
+        dashboard.appendChild(stationFragment)
+      })
+  },
+  showPlaylist() {
+
+    API.getUserStations()
+      .then(savedStations => {
+        console.log(savedStations)
+        let container = document.querySelector("#container")
+
+        savedStations.forEach(savedUserStations => {
+          card.userStationBuilder()
+        })
       })
   }
 }

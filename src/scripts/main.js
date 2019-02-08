@@ -1,4 +1,5 @@
 import stationList from "./stationList"
+import form from "./form";
 
 // NAVIGATION BAR, MENU AND HEADER
 const header = document.querySelector("#header")
@@ -21,10 +22,26 @@ navBar.appendChild(menu)
 menu.appendChild(home)
 menu.appendChild(library)
 
-// DASHBOARD
-const dashboard = document.querySelector("#dashboard")
+// DASHBOARD & CASE
+const dashboardHead = document.querySelector("#dashboardHead")
 const dashboardHeading = document.createElement("h2")
-dashboardHeading.textContent = "STATIONS"
-dashboard.appendChild(dashboardHeading)
+dashboardHeading.textContent = "VIEW STATIONS"
+dashboardHead.appendChild(dashboardHeading)
+
+
+// PANEL & CASE
+const panelHead = document.querySelector("#panelHead")
+const panelHeading = document.createElement("h2")
+panelHeading.textContent = "ADD STATION"
+panelHead.appendChild(panelHeading)
+
+// CONTAINER
+const container = document.querySelector("#container")
+const containerHeading = document.createElement("h2")
+containerHeading.textContent = "MY STATIONS"
+container.appendChild(containerHeading)
+
 
 stationList.showCards()
+stationList.showPlaylist()
+form.formBuilder()
