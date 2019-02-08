@@ -6,8 +6,8 @@ const card = {
   cardBuilder(eachStation) {
     // DASHBOARD AND GALLERY
     const dashboard = document.querySelector("#dashboard")
-    const displayArea = document.createElement("div")
-    displayArea.setAttribute("class", "title__gallery")
+    const dashboardScreen = document.createElement("div")
+    dashboardScreen.setAttribute("class", "title__gallery")
 
     // STATION DISPLAY CARDS
     const displayCard = document.createElement("div")
@@ -41,19 +41,19 @@ const card = {
             stationFragment.appendChild(stationCard)
           })
 
-          // const outputArticle = document.querySelector("#dashboard")
-
           dashboard.appendChild(stationFragment)
         })
     })
 
 
     // APPENDING ITEMS TO DOM
-    dashboard.appendChild(displayArea)
-    displayArea.appendChild(displayTitle)
-    displayArea.appendChild(displayGraphic)
-    displayArea.appendChild(displayDescription)
-    displayArea.appendChild(stationViewButton)
+    dashboard.appendChild(dashboardScreen)
+    dashboardScreen.appendChild(displayTitle)
+    dashboardScreen.appendChild(displayGraphic)
+    dashboardScreen.appendChild(displayDescription)
+    dashboardScreen.appendChild(stationViewButton)
+
+
 
     return displayCard
   }

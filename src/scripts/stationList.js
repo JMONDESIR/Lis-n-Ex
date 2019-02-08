@@ -1,5 +1,6 @@
 import API from "./stationCollection"
 import card from "./card"
+import form from "./form"
 
 const stationList = {
   showCards() {
@@ -17,6 +18,20 @@ const stationList = {
         const dashboard = document.querySelector("#dashboard")
 
         dashboard.appendChild(stationFragment)
+      })
+  },
+  showPlaylist() {
+
+    API.getUserStations()
+      .then(savedStations => {
+        console.log(savedStations)
+        let container = document.querySelector("#container")
+
+        savedStations.forEach(savedUserStations => {
+          let userStation = form.createNewStation(savedUserStations)
+          // container.appendChild(userStation)
+        })
+
       })
   }
 }

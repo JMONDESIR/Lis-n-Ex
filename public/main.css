@@ -21,7 +21,7 @@
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin-top: 20px;
+  margin-top: 5px;
   padding: 10px;
   }
 
@@ -67,6 +67,29 @@
 
   .displayDescription {
     margin-top: 10px;
+  }
+
+  fieldset {
+    width: 700px;
+    height: 235px;
+    margin: auto;
+    padding: 3px;
+  }
+
+  input {
+    width: 330px;
+    height: 30px;
+    margin: 4px;
+  }
+
+  .createStationButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 170px;
+    height: 20px;
+    background-color:  orangered;
+    border-radius: 4px;
   }
 
 
