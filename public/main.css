@@ -92,5 +92,15 @@
     border-radius: 4px;
   }
 
+  .playButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 170px;
+    height: 20px;
+    background-color:  orangered;
+    border-radius: 4px;
+  }
+
 
 

@@ -28,10 +28,8 @@ const stationList = {
         let container = document.querySelector("#container")
 
         savedStations.forEach(savedUserStations => {
-          let userStation = form.createNewStation(savedUserStations)
-          // container.appendChild(userStation)
+          card.userStationBuilder()
         })
-
       })
   }
 }

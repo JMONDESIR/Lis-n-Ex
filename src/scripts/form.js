@@ -120,13 +120,12 @@ const form = {
 
     return API.postNewStation(newStation)
       .then(res => {
-        console.log(res)
         let savedStationFragment = document.createDocumentFragment()
 
-        res.forEach(allSavedStations => {
-          let showCard = form.formBuilder(allSavedStations)
-          savedStationFragment.appendChild(showCard)
-        })
+        // res.forEach(allSavedStations => {
+        //   let showCard = form.formBuilder(allSavedStations)
+        //   savedStationFragment.appendChild(showCard)
+        // })
 
       })
   }

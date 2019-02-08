@@ -56,6 +56,46 @@ const card = {
 
 
     return displayCard
+  },
+  userStationBuilder(savedStations) {
+    const container = document.querySelector("#container")
+    const containerScreen = document.createElement("div")
+    containerScreen.setAttribute("class", "title__gallery")
+
+    // USER DISPLAY CARDS
+    const displayCard = document.createElement("div")
+    const displayTitle = document.createElement("h3")
+    const displayGraphic = document.createElement("div")
+    const displayDescription = document.createElement("p")
+    displayDescription.textContent = "Brief description goes here"
+    displayDescription.setAttribute("class", "displayDescription")
+    displayGraphic.setAttribute("class", "displayGraphic")
+    displayCard.setAttribute("class", "displayCard")
+    displayTitle.setAttribute("class", "displayTitle")
+    displayTitle.textContent = "Title"
+
+    // USER STATION BUTTONS
+    const playButton = document.createElement("button")
+    playButton.setAttribute("class", "playButton")
+    playButton.textContent = "PLAY"
+
+    const removeButton = document.createElement("button")
+    removeButton.setAttribute("class", "removeButton")
+    removeButton.textContent = "DELETE STATION"
+
+    const editButton = document.createElement("button")
+    editButton.setAttribute("class", "editButton")
+    editButton.textContent = "EDIT"
+
+    container.appendChild(containerScreen)
+    containerScreen.appendChild(displayTitle)
+    containerScreen.appendChild(displayGraphic)
+    containerScreen.appendChild(displayDescription)
+    containerScreen.appendChild(playButton)
+    containerScreen.appendChild(removeButton)
+    containerScreen.appendChild(editButton)
+
+    return displayCard
   }
 }
 

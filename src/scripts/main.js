@@ -25,7 +25,7 @@ menu.appendChild(library)
 // DASHBOARD & CASE
 const dashboardHead = document.querySelector("#dashboardHead")
 const dashboardHeading = document.createElement("h2")
-dashboardHeading.textContent = "STATIONS"
+dashboardHeading.textContent = "VIEW STATIONS"
 dashboardHead.appendChild(dashboardHeading)
 
 
@@ -34,6 +34,12 @@ const panelHead = document.querySelector("#panelHead")
 const panelHeading = document.createElement("h2")
 panelHeading.textContent = "ADD STATION"
 panelHead.appendChild(panelHeading)
+
+// CONTAINER
+const container = document.querySelector("#container")
+const containerHeading = document.createElement("h2")
+containerHeading.textContent = "MY STATIONS"
+container.appendChild(containerHeading)
 
 
 stationList.showCards()
