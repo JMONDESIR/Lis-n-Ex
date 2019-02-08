@@ -1,5 +1,6 @@
 import API from "./stationCollection"
 import stationList from "./stationList";
+import card from "./card";
 
 const form = {
   formBuilder() {
@@ -120,12 +121,14 @@ const form = {
 
     return API.postNewStation(newStation)
       .then(res => {
+        document.querySelector("#container").innerHTML = " "
+        card.userStationBuilder()
         let savedStationFragment = document.createDocumentFragment()
 
-        // res.forEach(allSavedStations => {
-        //   let showCard = form.formBuilder(allSavedStations)
-        //   savedStationFragment.appendChild(showCard)
-        // })
+        res.forEach(allSavedStations => {
+          let showCard = form.formBuilder(allSavedStations)
+          savedStationFragment.appendChild(showCard)
+        })
 
       })
   }

@@ -6,7 +6,7 @@ const header = document.querySelector("#header")
 const navBar = document.createElement("div")
 navBar.setAttribute("class", "menu__bar")
 
-let welcomeMessage = document.createElement("h2")
+let welcomeMessage = document.createElement("h1")
 welcomeMessage.textContent = "Welcome, Joel"
 
 const menu = document.createElement("ul")

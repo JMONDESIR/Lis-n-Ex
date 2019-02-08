@@ -17,6 +17,7 @@ const card = {
     displayDescription.textContent = eachStation.description
     displayDescription.setAttribute("class", "displayDescription")
     displayGraphic.setAttribute("class", "displayGraphic")
+    displayGraphic.setAttribute("img", "eachStation.")
     displayCard.setAttribute("class", "displayCard")
     displayTitle.setAttribute("class", "displayTitle")
     displayTitle.textContent = eachStation.title
@@ -66,9 +67,7 @@ const card = {
     const displayCard = document.createElement("div")
     const displayTitle = document.createElement("h3")
     const displayGraphic = document.createElement("div")
-    const displayDescription = document.createElement("p")
-    displayDescription.textContent = "Brief description goes here"
-    displayDescription.setAttribute("class", "displayDescription")
+
     displayGraphic.setAttribute("class", "displayGraphic")
     displayCard.setAttribute("class", "displayCard")
     displayTitle.setAttribute("class", "displayTitle")
@@ -82,6 +81,14 @@ const card = {
     const removeButton = document.createElement("button")
     removeButton.setAttribute("class", "removeButton")
     removeButton.textContent = "DELETE STATION"
+    removeButton.addEventListener("click", () => {
+      console.log()
+      let stationid = savedStations.id
+      API.removeStation(stationid)
+        .then(response => {
+          card.userStationBuilder();
+        })
+    })
 
     const editButton = document.createElement("button")
     editButton.setAttribute("class", "editButton")
@@ -90,7 +97,6 @@ const card = {
     container.appendChild(containerScreen)
     containerScreen.appendChild(displayTitle)
     containerScreen.appendChild(displayGraphic)
-    containerScreen.appendChild(displayDescription)
     containerScreen.appendChild(playButton)
     containerScreen.appendChild(removeButton)
     containerScreen.appendChild(editButton)

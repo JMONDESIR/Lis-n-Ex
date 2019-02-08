@@ -12,8 +12,8 @@ const API = {
       .then(response => response.json())
   },
 
-  getUserStations() {
-    return fetch("http://localhost:8088/userSavedStations")
+  getUserStations(userId) {
+    return fetch(`http://localhost:8088/userSavedStations?userId=${userId}`)
       .then(response => response.json())
   },
   postNewStation(newStation) {
@@ -27,5 +27,13 @@ const API = {
     }
     ).then(response => response.json())
   },
+  removeStation(stationId) {
+    return fetch(`http://localhost:8088/userSavedStations/${stationId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+  }
 }
 export default API

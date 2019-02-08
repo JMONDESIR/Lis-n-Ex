@@ -5,6 +5,7 @@ import form from "./form"
 const stationList = {
   showCards() {
 
+
     API.getAllCategories()
       .then(allStations => {
         console.log(allStations)
@@ -21,11 +22,10 @@ const stationList = {
       })
   },
   showPlaylist() {
-
-    API.getUserStations()
+    let userId = 1;
+    API.getUserStations(userId)
       .then(savedStations => {
         console.log(savedStations)
-        let container = document.querySelector("#container")
 
         savedStations.forEach(savedUserStations => {
           card.userStationBuilder()

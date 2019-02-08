@@ -21,76 +21,19 @@
   ],
   "userSavedStations": [
     {
-      "id": 60639,
-      "name": "Dallas Rap Radio",
-      "country": "US",
-      "image": {
-        "url": "https://img.dirble.com/station/60639/efacf735-ebf7-48ab-9d13-49aae12126c5.jpg",
-        "thumb": {
-          "url": "https://img.dirble.com/station/60639/thumb_efacf735-ebf7-48ab-9d13-49aae12126c5.jpg"
-        }
-      },
-      "slug": "dallas-rap-radio",
-      "website": "https://www.ClevaDon.com",
-      "twitter": "@DallasRapRadio",
-      "facebook": "https://www.facebook.com/DallasRapRadio",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": 10,
-          "title": "Rap",
-          "description": "50 Cent and more.",
-          "slug": "rap",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "https://s2.radio.co/s0895aab32/listen",
-          "bitrate": 192,
-          "content_type": "audio/mpeg",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-01-21T04:04:40+01:00",
-      "updated_at": "2019-01-21T04:04:40+01:00"
+      "stationId": 60639,
+      "userId": 1,
+      "id": 1
     },
     {
-      "name": "",
-      "country": "",
-      "image": {
-        "url": "",
-        "thumb": {
-          "url": ""
-        }
-      },
-      "slug": "",
-      "website": "",
-      "twitter": "",
-      "facebook": "",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "slug": "",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "",
-          "bitrate": "",
-          "content_type": "",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-01-21T04:04:40+01:00",
-      "updated_at": "2019-01-21T04:04:40+01:00",
-      "id": 60640
+      "stationId": 60640,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "stationId": 60641,
+      "userId": 1,
+      "id": 3
     }
   ]
 }
