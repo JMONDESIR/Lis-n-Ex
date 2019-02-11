@@ -2,6 +2,8 @@ import stationList from "./stationList"
 import form from "./form";
 
 // NAVIGATION BAR, MENU AND HEADER
+// TODO: get user ID from session
+const userId = "1234"
 const header = document.querySelector("#header")
 const navBar = document.createElement("div")
 navBar.setAttribute("class", "menu__bar")
@@ -35,6 +37,12 @@ const panelHeading = document.createElement("h2")
 panelHeading.textContent = "ADD STATION"
 panelHead.appendChild(panelHeading)
 
+// EDIT CONTAINER
+const editHead = document.querySelector("#editHead")
+const editHeading = document.createElement("h2")
+editHeading.textContent = "EDIT STATION"
+editHead.appendChild(editHeading)
+
 // CONTAINER
 const container = document.querySelector("#container")
 const containerHeading = document.createElement("h2")
@@ -44,4 +52,5 @@ container.appendChild(containerHeading)
 
 stationList.showCards()
 stationList.showPlaylist()
-form.formBuilder()
+form.formBuilder(userId)
+form.editForm()

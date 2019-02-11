@@ -8,7 +8,7 @@ const stationList = {
 
     API.getAllCategories()
       .then(allStations => {
-        console.log(allStations)
+
         let stationFragment = document.createDocumentFragment()
 
         allStations.forEach(eachStation => {
@@ -24,13 +24,9 @@ const stationList = {
   showPlaylist() {
     let userId = 1;
     API.getUserStations(userId)
-      .then(savedStations => {
-        console.log(savedStations)
-
-        savedStations.forEach(savedUserStations => {
-          card.userStationBuilder()
-        })
-      })
+      .then(savedStations => savedStations.forEach(station => {
+        return card.userStationBuilder(station)
+      }))
   }
 }
 

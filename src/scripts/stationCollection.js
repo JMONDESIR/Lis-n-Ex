@@ -13,12 +13,11 @@ const API = {
   },
 
   getUserStations(userId) {
-    return fetch(`http://localhost:8088/userSavedStations?userId=${userId}`)
+    return fetch(`http://localhost:8088/userCreatedStations?userId=${userId}`)
       .then(response => response.json())
   },
   postNewStation(newStation) {
-    // We want to return this fetch request so that at the point it is called, we can take advantage of the asynchronous nature of promises to wait for this to be done before getting the latest data and rerendering the DOM.
-    return fetch("http://localhost:8088/userSavedStations", {
+    return fetch("http://localhost:8088/userCreatedStations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -28,11 +27,20 @@ const API = {
     ).then(response => response.json())
   },
   removeStation(stationId) {
-    return fetch(`http://localhost:8088/userSavedStations/${stationId}`, {
+    return fetch(`http://localhost:8088/userCreatedStations/${stationId}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json"
       }
+    }).then(response => response.json())
+  },
+  editStation(stationId, updatedStationInfo) {
+    return fetch(`http://localhost:8088/userCreatedStations/${stationId}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(updatedStationInfo)
     })
   }
 }

@@ -34,7 +34,6 @@ const card = {
 
       API.getStationsByCategoryId(eachStation.id)
         .then(allStations => {
-          console.log(allStations)
           let stationFragment = document.createDocumentFragment()
 
           allStations.forEach(eachStation => {
@@ -58,7 +57,8 @@ const card = {
 
     return displayCard
   },
-  userStationBuilder(savedStations) {
+  userStationBuilder(station) {
+    const url = station && station.image.url || "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png"
     const container = document.querySelector("#container")
     const containerScreen = document.createElement("div")
     containerScreen.setAttribute("class", "title__gallery")
@@ -67,11 +67,15 @@ const card = {
     const displayCard = document.createElement("div")
     const displayTitle = document.createElement("h3")
     const displayGraphic = document.createElement("div")
+    const thumbnail = document.createElement("img")
+    thumbnail.setAttribute("src", url)
+    thumbnail.setAttribute("class", "thumb")
 
     displayGraphic.setAttribute("class", "displayGraphic")
+    displayGraphic.appendChild(thumbnail)
     displayCard.setAttribute("class", "displayCard")
     displayTitle.setAttribute("class", "displayTitle")
-    displayTitle.textContent = "Title"
+    displayTitle.textContent = station.name
 
     // USER STATION BUTTONS
     const playButton = document.createElement("button")
@@ -81,18 +85,21 @@ const card = {
     const removeButton = document.createElement("button")
     removeButton.setAttribute("class", "removeButton")
     removeButton.textContent = "DELETE STATION"
-    removeButton.addEventListener("click", () => {
-      console.log()
-      let stationid = savedStations.id
-      API.removeStation(stationid)
-        .then(response => {
-          card.userStationBuilder();
-        })
-    })
+    removeButton.addEventListener("click", () => API.removeStation(station.id)
+      .then(res => {
+        document.querySelector("#container").innerHTML = " "
+        const containerHeading = document.createElement("h2")
+        containerHeading.textContent = "MY STATIONS"
+        container.appendChild(containerHeading)
+
+        stationList.showPlaylist()
+      })
+    )
 
     const editButton = document.createElement("button")
     editButton.setAttribute("class", "editButton")
     editButton.textContent = "EDIT"
+
 
     container.appendChild(containerScreen)
     containerScreen.appendChild(displayTitle)

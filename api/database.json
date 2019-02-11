@@ -19,21 +19,91 @@
       "username": "The Joker"
     }
   ],
-  "userSavedStations": [
+  "userCreatedStations": [
     {
-      "stationId": 60639,
-      "userId": 1,
+      "name": "A",
+      "country": "A",
+      "image": {
+        "url": "",
+        "thumb": {
+          "url": ""
+        }
+      },
+      "slug": "A",
+      "website": "A",
+      "twitter": "A",
+      "facebook": "A",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": "",
+          "title": "A",
+          "description": "A",
+          "slug": "A",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "A",
+          "bitrate": "",
+          "content_type": "A",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "created_at": "2019-01-21T04:04:40+01:00",
+      "updated_at": "2019-01-21T04:04:40+01:00",
       "id": 1
     },
     {
-      "stationId": 60640,
-      "userId": 2,
-      "id": 2
+      "name": "J",
+      "country": "J",
+      "image": {
+        "url": "https://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
+        "thumb": {
+          "url": "https://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg"
+        }
+      },
+      "slug": "J",
+      "website": "J",
+      "twitter": "J",
+      "facebook": "J",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": "",
+          "title": "J",
+          "description": "J",
+          "slug": "J",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "J",
+          "bitrate": "",
+          "content_type": "J",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "created_at": "2019-01-21T04:04:40+01:00",
+      "updated_at": "2019-01-21T04:04:40+01:00",
+      "id": 10
     },
     {
-      "stationId": 60641,
-      "userId": 1,
-      "id": 3
+      "name": "T",
+      "country": "T",
+      "image": "T",
+      "website": "T",
+      "twitter": "T",
+      "facebook": "T",
+      "genre": "T",
+      "description": "T",
+      "stream": "T",
+      "type": "T",
+      "id": 11
     }
   ]
 }
