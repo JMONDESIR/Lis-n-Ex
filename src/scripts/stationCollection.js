@@ -42,6 +42,10 @@ const API = {
       },
       body: JSON.stringify(updatedStationInfo)
     })
+  },
+  getStation(stationId) {
+    return fetch(`http://localhost:8088/userCreatedStations/${stationId}`)
+      .then(response => response.json)
   }
 }
 export default API

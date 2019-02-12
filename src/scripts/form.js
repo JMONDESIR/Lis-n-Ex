@@ -1,6 +1,5 @@
 import API from "./stationCollection"
 import stationList from "./stationList";
-import card from "./card";
 
 const form = {
   formBuilder(userId) {
@@ -228,33 +227,9 @@ const form = {
         created_at: "2019-01-21T04:04:40+01:00",
         updated_at: "2019-01-21T04:04:40+01:00"
       }
-    }
-      // EDIT FUNCTION NEEDS TO TARGET STATION ID
-      API.editStation(11, dataUpdate).then(res => {
-      document.querySelector("#container").innerHTML = " "
-      const containerHeading = document.createElement("h2")
-      containerHeading.textContent = "MY STATIONS"
-      container.appendChild(containerHeading)
-
-      stationList.showPlaylist()
     })
 
-    })
-
-  editField.appendChild(name)
-    editField.appendChild(country)
-    editField.appendChild(image)
-    editField.appendChild(website)
-    editField.appendChild(twitter)
-    editField.appendChild(facebook)
-    editField.appendChild(genre)
-    editField.appendChild(description)
-    editField.appendChild(stream)
-    editField.appendChild(type)
-    editField.appendChild(saveButton)
-
-    editContainer.appendChild(editField)
-
+  }
 }
-}
+
 export default form

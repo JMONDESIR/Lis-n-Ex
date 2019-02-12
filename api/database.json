@@ -21,89 +21,78 @@
   ],
   "userCreatedStations": [
     {
-      "name": "A",
-      "country": "A",
+      "name": "Roots Reggae",
+      "country": "",
       "image": {
-        "url": "",
+        "url": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/29/13/bob-marley.jpg?w968h681",
         "thumb": {
-          "url": ""
+          "url": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/29/13/bob-marley.jpg?w968h681"
         }
       },
-      "slug": "A",
-      "website": "A",
-      "twitter": "A",
-      "facebook": "A",
+      "slug": "Roots Reggae",
+      "website": "",
+      "twitter": "",
+      "facebook": "",
       "total_listeners": 0,
       "categories": [
         {
           "id": "",
-          "title": "A",
-          "description": "A",
-          "slug": "A",
+          "title": "",
+          "description": "",
+          "slug": "",
           "ancestry": null
         }
       ],
       "streams": [
         {
-          "stream": "A",
+          "stream": "",
           "bitrate": "",
-          "content_type": "A",
+          "content_type": "",
           "status": 1,
           "listeners": 0
         }
       ],
       "created_at": "2019-01-21T04:04:40+01:00",
       "updated_at": "2019-01-21T04:04:40+01:00",
-      "id": 1
+      "created_by": "1234",
+      "id": 2
     },
     {
-      "name": "J",
-      "country": "J",
+      "name": "Jazz Fusion",
+      "country": "",
       "image": {
-        "url": "https://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
+        "url": "https://m.media-amazon.com/images/I/61skEdpJuOL._SS500_.jpg",
         "thumb": {
-          "url": "https://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg"
+          "url": "https://m.media-amazon.com/images/I/61skEdpJuOL._SS500_.jpg"
         }
       },
-      "slug": "J",
-      "website": "J",
-      "twitter": "J",
-      "facebook": "J",
+      "slug": "Jazz Fusion",
+      "website": "",
+      "twitter": "",
+      "facebook": "",
       "total_listeners": 0,
       "categories": [
         {
           "id": "",
-          "title": "J",
-          "description": "J",
-          "slug": "J",
+          "title": "",
+          "description": "",
+          "slug": "",
           "ancestry": null
         }
       ],
       "streams": [
         {
-          "stream": "J",
+          "stream": "",
           "bitrate": "",
-          "content_type": "J",
+          "content_type": "",
           "status": 1,
           "listeners": 0
         }
       ],
       "created_at": "2019-01-21T04:04:40+01:00",
       "updated_at": "2019-01-21T04:04:40+01:00",
-      "id": 10
-    },
-    {
-      "name": "T",
-      "country": "T",
-      "image": "T",
-      "website": "T",
-      "twitter": "T",
-      "facebook": "T",
-      "genre": "T",
-      "description": "T",
-      "stream": "T",
-      "type": "T",
-      "id": 11
+      "created_by": "1234",
+      "id": 3
     }
   ]
 }

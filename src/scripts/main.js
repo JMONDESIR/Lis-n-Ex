@@ -37,12 +37,6 @@ const panelHeading = document.createElement("h2")
 panelHeading.textContent = "ADD STATION"
 panelHead.appendChild(panelHeading)
 
-// EDIT CONTAINER
-const editHead = document.querySelector("#editHead")
-const editHeading = document.createElement("h2")
-editHeading.textContent = "EDIT STATION"
-editHead.appendChild(editHeading)
-
 // CONTAINER
 const container = document.querySelector("#container")
 const containerHeading = document.createElement("h2")

@@ -1,5 +1,6 @@
 import stationList from "./stationList"
 import API from "./stationCollection";
+import stationEditor from "./stationEditor"
 
 const card = {
 
@@ -99,6 +100,7 @@ const card = {
     const editButton = document.createElement("button")
     editButton.setAttribute("class", "editButton")
     editButton.textContent = "EDIT"
+    editButton.addEventListener("click", () => stationEditor.editForm())
 
 
     container.appendChild(containerScreen)
