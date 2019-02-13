@@ -1,5 +1,7 @@
 import stationList from "./stationList"
 import form from "./form";
+import registrationForm from "./registrationForm"
+import login from "./login"
 
 // NAVIGATION BAR, MENU AND HEADER
 // TODO: get user ID from session
@@ -43,8 +45,9 @@ const containerHeading = document.createElement("h2")
 containerHeading.textContent = "MY STATIONS"
 container.appendChild(containerHeading)
 
-
+login.createAndAppendLoginInput()
 stationList.showCards()
 stationList.showPlaylist()
 form.formBuilder(userId)
-form.editForm()
+// form.editForm()
+registrationForm.createAndAppendRegistrationForm()

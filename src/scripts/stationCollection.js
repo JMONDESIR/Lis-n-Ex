@@ -11,7 +11,10 @@ const API = {
     return fetch(`${baseURL}category/${id}/stations${token}`)
       .then(response => response.json())
   },
-
+  getUsers(users) {
+    return fetch("http://localhost:8088/users")
+      .then(response => response.json())
+  },
   getUserStations(userId) {
     return fetch(`http://localhost:8088/userCreatedStations?userId=${userId}`)
       .then(response => response.json())
@@ -34,6 +37,10 @@ const API = {
       }
     }).then(response => response.json())
   },
+  getStation(stationId) {
+    return fetch(`http://localhost:8088/userCreatedStations/${stationId}`)
+      .then(response => response.json)
+  },
   editStation(stationId, updatedStationInfo) {
     return fetch(`http://localhost:8088/userCreatedStations/${stationId}`, {
       method: "PUT",
@@ -42,10 +49,6 @@ const API = {
       },
       body: JSON.stringify(updatedStationInfo)
     })
-  },
-  getStation(stationId) {
-    return fetch(`http://localhost:8088/userCreatedStations/${stationId}`)
-      .then(response => response.json)
   }
 }
 export default API

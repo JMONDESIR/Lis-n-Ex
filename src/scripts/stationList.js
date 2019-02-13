@@ -1,6 +1,5 @@
 import API from "./stationCollection"
 import card from "./card"
-import form from "./form"
 
 const stationList = {
   showCards() {

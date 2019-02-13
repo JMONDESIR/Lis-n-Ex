@@ -41,16 +41,6 @@
     margin: 3px;
   }
 
-  .stationViewButton {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-    width: 170px;
-    height: 20px;
-    background-color:  orangered;
-    border-radius: 4px;
-  }
-
   .genreArt {
     width: 100px;
     height: 100px;
@@ -94,19 +84,9 @@
   }
 
   input {
-    width: 330px;
+    width: 220px;
     height: 20px;
     margin: 4px;
-  }
-
-  .createStationButton {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-    width: 170px;
-    height: 20px;
-    background-color:  orangered;
-    border-radius: 4px;
   }
 
   h2 {
@@ -125,7 +105,7 @@
     justify-content: center;
   }
 
-  .playButton {
+  .button {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
@@ -142,16 +122,6 @@
     width: 170px;
     height: 20px;
     background-color: red;
-    border-radius: 4px;
-  }
-
-  .editButton {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-    width: 170px;
-    height: 20px;
-    background-color: orangered;
     border-radius: 4px;
   }
 

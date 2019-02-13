@@ -59,6 +59,7 @@ const card = {
     return displayCard
   },
   userStationBuilder(station) {
+    console.log(station)
     const url = station && station.image.url || "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png"
     const container = document.querySelector("#container")
     const containerScreen = document.createElement("div")
@@ -80,7 +81,7 @@ const card = {
 
     // USER STATION BUTTONS
     const playButton = document.createElement("button")
-    playButton.setAttribute("class", "playButton")
+    playButton.setAttribute("class", "button")
     playButton.textContent = "PLAY"
 
     const removeButton = document.createElement("button")
@@ -98,9 +99,9 @@ const card = {
     )
 
     const editButton = document.createElement("button")
-    editButton.setAttribute("class", "editButton")
+    editButton.setAttribute("class", "button")
     editButton.textContent = "EDIT"
-    editButton.addEventListener("click", () => stationEditor.editForm())
+    editButton.addEventListener("click", () => stationEditor.editForm(station.id, station))
 
 
     container.appendChild(containerScreen)

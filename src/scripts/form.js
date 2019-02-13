@@ -11,7 +11,7 @@ const form = {
     const inputField = document.createElement("fieldset")
 
     const name = document.createElement("input")
-    name.setAttribute("placeholder", "Name:")
+    name.setAttribute("placeholder", "Station Name:")
     name.setAttribute("id", "name__input")
 
     const country = document.createElement("input")
@@ -34,8 +34,31 @@ const form = {
     facebook.setAttribute("placeholder", "Facebook URL:")
     facebook.setAttribute("id", "facebook__input")
 
-    const genre = document.createElement("input")
-    genre.setAttribute("placeholder", "Genre:")
+    const genre = document.createElement("select")
+    const genre_tag = document.createElement("label")
+    genre_tag.textContent = "SELECT GENRE"
+
+    const rap = document.createElement("option")
+    rap.setAttribute("value", "Rap")
+    rap.textContent = "Rap"
+
+    const gospel = document.createElement("option")
+    gospel.setAttribute("value", "Gospel")
+    gospel.textContent = "Gospel"
+
+    const pop = document.createElement("option")
+    pop.setAttribute("value", "Pop")
+    pop.textContent = "Pop"
+
+    const trance = document.createElement("option")
+    trance.setAttribute("value", "Trance")
+    trance.textContent = "Trance"
+
+    genre.appendChild(genre_tag)
+    genre.appendChild(rap)
+    genre.appendChild(gospel)
+    genre.appendChild(pop)
+
     genre.setAttribute("id", "genre__input")
 
     const description = document.createElement("input")
@@ -51,7 +74,7 @@ const form = {
     type.setAttribute("id", "content__input")
 
     const createStationButton = document.createElement("button")
-    createStationButton.setAttribute("class", "createStationButton")
+    createStationButton.setAttribute("class", "button")
     createStationButton.textContent = "CREATE STATION"
     createStationButton.addEventListener("click", () => form.createNewStation(userId))
 
@@ -130,106 +153,106 @@ const form = {
         stationList.showPlaylist()
       })
   },
-  editForm() {
-    const editContainer = document.querySelector("#edit")
+  // editForm() {
+  //   const editContainer = document.querySelector("#edit")
 
-    const editField = document.createElement("fieldset")
+  //   const editField = document.createElement("fieldset")
 
-    const name = document.createElement("input")
-    name.setAttribute("placeholder", "Name:")
-    name.setAttribute("id", "edit_name_input")
+  //   const name = document.createElement("input")
+  //   name.setAttribute("placeholder", "Name:")
+  //   name.setAttribute("id", "edit_name_input")
 
-    const country = document.createElement("input")
-    country.setAttribute("placeholder", "Country:")
-    country.setAttribute("id", "edit_country_input")
+  //   const country = document.createElement("input")
+  //   country.setAttribute("placeholder", "Country:")
+  //   country.setAttribute("id", "edit_country_input")
 
-    const image = document.createElement("input")
-    image.setAttribute("placeholder", "Image URL:")
-    image.setAttribute("id", "edit_image_input")
+  //   const image = document.createElement("input")
+  //   image.setAttribute("placeholder", "Image URL:")
+  //   image.setAttribute("id", "edit_image_input")
 
-    const website = document.createElement("input")
-    website.setAttribute("placeholder", "Website:")
-    website.setAttribute("id", "edit_website_input")
+  //   const website = document.createElement("input")
+  //   website.setAttribute("placeholder", "Website:")
+  //   website.setAttribute("id", "edit_website_input")
 
-    const twitter = document.createElement("input")
-    twitter.setAttribute("placeholder", "Twitter URL:")
-    twitter.setAttribute("id", "edit_twitter_input")
+  //   const twitter = document.createElement("input")
+  //   twitter.setAttribute("placeholder", "Twitter URL:")
+  //   twitter.setAttribute("id", "edit_twitter_input")
 
-    const facebook = document.createElement("input")
-    facebook.setAttribute("placeholder", "Facebook URL:")
-    facebook.setAttribute("id", "edit_facebook_input")
+  //   const facebook = document.createElement("input")
+  //   facebook.setAttribute("placeholder", "Facebook URL:")
+  //   facebook.setAttribute("id", "edit_facebook_input")
 
-    const genre = document.createElement("input")
-    genre.setAttribute("placeholder", "Genre:")
-    genre.setAttribute("id", "edit_genre_input")
+  //   const genre = document.createElement("input")
+  //   genre.setAttribute("placeholder", "Genre:")
+  //   genre.setAttribute("id", "edit_genre_input")
 
-    const description = document.createElement("input")
-    description.setAttribute("placeholder", "Description:")
-    description.setAttribute("id", "edit_description_input")
+  //   const description = document.createElement("input")
+  //   description.setAttribute("placeholder", "Description:")
+  //   description.setAttribute("id", "edit_description_input")
 
-    const stream = document.createElement("input")
-    stream.setAttribute("placeholder", "Stream URL:")
-    stream.setAttribute("id", "edit_stream_input")
+  //   const stream = document.createElement("input")
+  //   stream.setAttribute("placeholder", "Stream URL:")
+  //   stream.setAttribute("id", "edit_stream_input")
 
-    const type = document.createElement("input")
-    type.setAttribute("placeholder", "Content Type:")
-    type.setAttribute("id", "edit_type_input")
+  //   const type = document.createElement("input")
+  //   type.setAttribute("placeholder", "Content Type:")
+  //   type.setAttribute("id", "edit_type_input")
 
-    const saveButton = document.createElement("button")
-    saveButton.setAttribute("class", "editButton")
-    saveButton.textContent = "SAVE STATION"
+  //   const saveButton = document.createElement("button")
+  //   saveButton.setAttribute("class", "button")
+  //   saveButton.textContent = "SAVE STATION"
 
-    saveButton.addEventListener("click", () => {
+  //   saveButton.addEventListener("click", () => {
 
-      let name = document.querySelector("#edit_name_input").value
-      let country = document.querySelector("#edit_country_input").value
-      let imageURL = document.querySelector("#edit_image_input").value
-      let website = document.querySelector("#edit_website_input").value
-      let twitter = document.querySelector("#edit_twitter_input").value
-      let facebook = document.querySelector("#edit_facebook_input").value
-      let genre = document.querySelector("#edit_genre_input").value
-      let description = document.querySelector("#edit_description_input").value
-      let stream = document.querySelector("#edit_stream_input").value
-      let type = document.querySelector("#edit_type_input").value
+  //     let name = document.querySelector("#edit_name_input").value
+  //     let country = document.querySelector("#edit_country_input").value
+  //     let imageURL = document.querySelector("#edit_image_input").value
+  //     let website = document.querySelector("#edit_website_input").value
+  //     let twitter = document.querySelector("#edit_twitter_input").value
+  //     let facebook = document.querySelector("#edit_facebook_input").value
+  //     let genre = document.querySelector("#edit_genre_input").value
+  //     let description = document.querySelector("#edit_description_input").value
+  //     let stream = document.querySelector("#edit_stream_input").value
+  //     let type = document.querySelector("#edit_type_input").value
 
-      const dataUpdate = {
-        name,
-        country,
-        image: {
-          url: imageURL,
-          thumb: {
-            url: imageURL
-          }
-        },
-        slug: name,
-        website,
-        twitter,
-        facebook,
-        total_listeners: 0,
-        categories: [
-          {
-            id,
-            title,
-            description,
-            slug,
-            ancestry: null
-          }
-        ],
-        stream: [
-          {
-            stream,
-            bitrate,
-            content_type,
-            status,
-            listeners: 0
-          }
-        ],
-        created_at: "2019-01-21T04:04:40+01:00",
-        updated_at: "2019-01-21T04:04:40+01:00"
-      }
-    })
+  //     const dataUpdate = {
+  //       name,
+  //       country,
+  //       image: {
+  //         url: imageURL,
+  //         thumb: {
+  //           url: imageURL
+  //         }
+  //       },
+  //       slug: name,
+  //       website,
+  //       twitter,
+  //       facebook,
+  //       total_listeners: 0,
+  //       categories: [
+  //         {
+  //           id,
+  //           title,
+  //           description,
+  //           slug,
+  //           ancestry: null
+  //         }
+  //       ],
+  //       stream: [
+  //         {
+  //           stream,
+  //           bitrate,
+  //           content_type,
+  //           status,
+  //           listeners: 0
+  //         }
+  //       ],
+  //       created_at: "2019-01-21T04:04:40+01:00",
+  //       updated_at: "2019-01-21T04:04:40+01:00"
+  //     }
+  //   })
 
-  }
+  // }
 }
 
 export default form
