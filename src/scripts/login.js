@@ -19,9 +19,9 @@ const login = {
 
     const loginButton = document.createElement("button")
     loginButton.setAttribute("class", "button")
-    loginButton.textContent = ("login");
+    loginButton.textContent = ("LOGIN");
     const registerButton = document.createElement("button");
-    registerButton.textContent = ("register");
+    registerButton.textContent = ("REGISTER");
     outEl.appendChild(loginButton);
     outEl.appendChild(registerButton);
     loginButton.addEventListener("click", this.getUserData);

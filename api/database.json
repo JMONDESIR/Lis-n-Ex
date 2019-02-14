@@ -24,196 +24,33 @@
   ],
   "userCreatedStations": [
     {
-      "name": "Roots Reggae",
-      "country": "",
-      "image": {
-        "url": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/29/13/bob-marley.jpg?w968h681",
-        "thumb": {
-          "url": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/11/29/13/bob-marley.jpg?w968h681"
-        }
-      },
-      "slug": "Roots Reggae",
-      "website": "",
-      "twitter": "",
-      "facebook": "",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "slug": "",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "",
-          "bitrate": "",
-          "content_type": "",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-01-21T04:04:40+01:00",
-      "updated_at": "2019-01-21T04:04:40+01:00",
-      "created_by": "1234",
-      "id": 2
-    },
-    {
-      "name": "Jazz Fusion",
-      "country": "",
-      "image": {
-        "url": "https://m.media-amazon.com/images/I/61skEdpJuOL._SS500_.jpg",
-        "thumb": {
-          "url": "https://m.media-amazon.com/images/I/61skEdpJuOL._SS500_.jpg"
-        }
-      },
-      "slug": "Jazz Fusion",
-      "website": "",
-      "twitter": "",
-      "facebook": "",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": "",
-          "title": "",
-          "description": "",
-          "slug": "",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "",
-          "bitrate": "",
-          "content_type": "",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-01-21T04:04:40+01:00",
-      "updated_at": "2019-01-21T04:04:40+01:00",
-      "created_by": "1234",
-      "id": 3
-    },
-    {
-      "name": "Jibbs Hip Hop",
-      "country": "US",
-      "image": {
-        "url": "https://mdundo.com/media/playlist/149_jHfdaOif_t.jpg",
-        "thumb": {
-          "url": "https://mdundo.com/media/playlist/149_jHfdaOif_t.jpg"
-        }
-      },
-      "slug": "Jibbs Hip Hop",
-      "website": "",
-      "twitter": "",
-      "facebook": "",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": "",
-          "title": "Rap",
-          "description": "",
-          "slug": "Rap",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "",
-          "bitrate": "",
-          "content_type": "",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-01-21T04:04:40+01:00",
-      "updated_at": "2019-01-21T04:04:40+01:00",
-      "created_by": "1234",
-      "id": 4
-    },
-    {
       "name": "Big Mouth 99.7",
       "image": "https://i.iheart.com/v3/re/assets/images/5583.png",
       "genre": "Pop",
       "url": "undefined",
-      "id": 5
+      "id": 3
     },
     {
       "name": "Natty Power Radio",
-      "country": "Jamaica",
-      "image": {
-        "url": "https://i3.radionomy.com/radios/400/bc43bc84-1268-43ca-8b12-a7c3408a23a5.jpg",
-        "thumb": {
-          "url": "https://i3.radionomy.com/radios/400/bc43bc84-1268-43ca-8b12-a7c3408a23a5.jpg"
-        }
-      },
-      "slug": "Natty Power Radio",
-      "website": "https://www.nattypowerradio.com/",
-      "twitter": "https://twitter.com/nattypowerradio",
-      "facebook": "https://www.facebook.com/Nattypowerradio/",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": "",
-          "title": "Rap",
-          "description": "24 Hour Caribbean-programmed Internet radio station in the United States",
-          "slug": "Rap",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "https://www.nattypowerradio.com/",
-          "bitrate": "",
-          "content_type": "",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-01-21T04:04:40+01:00",
-      "updated_at": "2019-01-21T04:04:40+01:00",
-      "created_by": "1234",
-      "id": 6
+      "image": "https://i3.radionomy.com/radios/400/bc43bc84-1268-43ca-8b12-a7c3408a23a5.jpg",
+      "genre": "Rap",
+      "url": "",
+      "id": 4
     },
     {
-      "name": "Hits Radio",
-      "country": "US",
-      "image": {
-        "url": "https://hitsradio.com/assets/images/logo-large.png",
-        "thumb": {
-          "url": "https://hitsradio.com/assets/images/logo-large.png"
-        }
-      },
-      "slug": "Hits Radio",
-      "website": "https://hitsradio.com/#/",
-      "twitter": "https://twitter.com/nattypowerradio",
-      "facebook": "https://www.facebook.com/977radio/",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": "",
-          "title": "Rap",
-          "description": "Listen to the hits now",
-          "slug": "Rap",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "",
-          "bitrate": "",
-          "content_type": "",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-01-21T04:04:40+01:00",
-      "updated_at": "2019-01-21T04:04:40+01:00",
-      "created_by": "1234",
-      "id": 7
+      "name": "Retrowave Radio",
+      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/1df974b8c98e4407bdc5199f7aeb66d0.jpg",
+      "genre": "Electronic Folk",
+      "url": "",
+      "id": 5
+    },
+    {
+      "name": "Disney Classics",
+      "image": "https://images.8tracks.com/cover/i/010/089/069/disney-music-2014-10-29T18_07_45-104.png?rect=0,0,512,512&q=98&fm=jpg&fit=max",
+      "genre": "Rap",
+      "url": "",
+      "id": 6
     }
-  ]
+  ],
+  "userSavedStations": []
 }

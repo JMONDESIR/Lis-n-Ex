@@ -40,14 +40,13 @@ panelHeading.textContent = "ADD STATION"
 panelHead.appendChild(panelHeading)
 
 // CONTAINER
-const container = document.querySelector("#container")
+const containerHead = document.querySelector("#containerHead")
 const containerHeading = document.createElement("h2")
 containerHeading.textContent = "MY STATIONS"
-container.appendChild(containerHeading)
+containerHead.appendChild(containerHeading)
 
 login.createAndAppendLoginInput()
 stationList.showCards()
 stationList.showPlaylist()
 form.formBuilder(userId)
-// form.editForm()
 registrationForm.createAndAppendRegistrationForm()

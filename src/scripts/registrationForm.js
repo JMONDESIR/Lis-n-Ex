@@ -15,7 +15,7 @@ const registrationForm = {
     const registerHeader = document.createElement("h3")
     registerContainer.appendChild(registerHeader)
 
-    registerHeader.textContent = "Register User"
+    registerHeader.textContent = "REGISTER"
     userNameActual.type = "text"
     userNameInput.type = "text"
     userPasswordInput.type = "text"
@@ -24,7 +24,7 @@ const registrationForm = {
     userNameActual.placeholder = "Enter your name"
     userNameInput.placeholder = "Enter a UserName"
     userPasswordInput.placeholder = "Create Password"
-    userEmailInput.placeholder = "Your Email Address"
+    userEmailInput.placeholder = "Enter Email Address"
     createNewUser.textContent = "Register"
 
 

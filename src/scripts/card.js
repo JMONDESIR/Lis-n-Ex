@@ -60,13 +60,14 @@ const card = {
   },
   userStationBuilder(station) {
     console.log(station)
-    const url = station && station.image.url || "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png"
+    const url = station && station.image || "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png"
     const container = document.querySelector("#container")
     const containerScreen = document.createElement("div")
     containerScreen.setAttribute("class", "title__gallery")
 
     // USER DISPLAY CARDS
-    const displayCard = document.createElement("div")
+    // const displayCard = document.createElement("div")
+    const displayCard = document.createElement("button")
     const displayTitle = document.createElement("h3")
     const displayGraphic = document.createElement("div")
     const thumbnail = document.createElement("img")

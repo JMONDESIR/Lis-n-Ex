@@ -48,7 +48,7 @@ const API = {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(updatedStationInfo)
-    })
+    }).then(response => response.json())
   }
 }
 export default API
