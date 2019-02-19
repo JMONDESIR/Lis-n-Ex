@@ -22,35 +22,170 @@
       "name": "Neil Amos"
     }
   ],
-  "userCreatedStations": [
+  "userSavedStations": [
     {
-      "name": "Big Mouth 99.7",
-      "image": "https://i.iheart.com/v3/re/assets/images/5583.png",
-      "genre": "Pop",
-      "url": "undefined",
-      "id": 3
+      "id": 60907,
+      "name": "Radyo Maestro",
+      "country": "TR",
+      "image": {
+        "url": "https://img.dirble.com/station/60907/a52f69e3-d871-499d-97cf-d9ceb81d60f5.jpg",
+        "thumb": {
+          "url": "https://img.dirble.com/station/60907/thumb_a52f69e3-d871-499d-97cf-d9ceb81d60f5.jpg"
+        }
+      },
+      "slug": "radyo-maestro",
+      "website": "http://www.radyomaestro.com/",
+      "twitter": "https://twitter.com/maestro_radyo",
+      "facebook": "https://www.facebook.com/radyomaestroantalya",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": 11,
+          "title": "Classical",
+          "description": "Classical music such as Mozart and Beethoven but also Greig and others.",
+          "slug": "classical",
+          "ancestry": null
+        },
+        {
+          "id": 12,
+          "title": "Jazz",
+          "description": "The classical music - Jazz.",
+          "slug": "jazz",
+          "ancestry": null
+        },
+        {
+          "id": 25,
+          "title": "Mainstream Jazz",
+          "description": "",
+          "slug": "mainstream-jazz",
+          "ancestry": "12"
+        },
+        {
+          "id": 26,
+          "title": "Classical period music",
+          "description": "",
+          "slug": "classical-period-music",
+          "ancestry": "11"
+        }
+      ],
+      "streams": [
+        {
+          "stream": "http://151.80.4.46:7444/index.html?sid=1",
+          "bitrate": 0,
+          "content_type": "?",
+          "status": 0,
+          "listeners": 0
+        },
+        {
+          "stream": "http://radyomaestro.kesintisizyayin.com:7444",
+          "bitrate": 128,
+          "content_type": "audio/mpeg",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "created_at": "2019-02-09T22:42:36Z",
+      "updated_at": "2019-02-09T22:42:36Z"
     },
     {
-      "name": "Natty Power Radio",
-      "image": "https://i3.radionomy.com/radios/400/bc43bc84-1268-43ca-8b12-a7c3408a23a5.jpg",
-      "genre": "Rap",
-      "url": "",
-      "id": 4
+      "id": 60892,
+      "name": "TRSV Radio Hits",
+      "country": "US",
+      "image": {
+        "url": "https://img.dirble.com/station/60892/3ac72793-63eb-4c6d-bb29-159848cbcb7b.jpg",
+        "thumb": {
+          "url": "https://img.dirble.com/station/60892/thumb_3ac72793-63eb-4c6d-bb29-159848cbcb7b.jpg"
+        }
+      },
+      "slug": "trsv-radio-hits",
+      "website": "https://trsv.me",
+      "twitter": "@trsvny",
+      "facebook": "https://www.facebook.com/trsvny/",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": 2,
+          "title": "Rock",
+          "description": "simple rock. from elvis to metallica and like hardrock as iron maiden.",
+          "slug": "rock",
+          "ancestry": null
+        },
+        {
+          "id": 5,
+          "title": "Pop",
+          "description": "stations that normally play pop-music",
+          "slug": "pop",
+          "ancestry": null
+        },
+        {
+          "id": 10,
+          "title": "Rap",
+          "description": "50 Cent and more.",
+          "slug": "rap",
+          "ancestry": null
+        },
+        {
+          "id": 12,
+          "title": "Jazz",
+          "description": "The classical music - Jazz.",
+          "slug": "jazz",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "https://streaming.radionomy.com/TRSVRadioHits",
+          "bitrate": 128,
+          "content_type": "audio/mpeg",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "created_at": "2019-02-08T17:04:52+01:00",
+      "updated_at": "2019-02-18T13:06:51+01:00"
     },
     {
-      "name": "Retrowave Radio",
-      "image": "https://lastfm-img2.akamaized.net/i/u/300x300/1df974b8c98e4407bdc5199f7aeb66d0.jpg",
-      "genre": "Electronic Folk",
-      "url": "",
-      "id": 5
+      "name": "joel",
+      "image": "www.image.com",
+      "genre": "Trance",
+      "url": "vrfjvbljerw",
+      "id": 60908
     },
     {
-      "name": "Disney Classics",
-      "image": "https://images.8tracks.com/cover/i/010/089/069/disney-music-2014-10-29T18_07_45-104.png?rect=0,0,512,512&q=98&fm=jpg&fit=max",
-      "genre": "Rap",
-      "url": "",
-      "id": 6
+      "id": 60585,
+      "name": "Fire Jazz",
+      "country": "US",
+      "image": {
+        "url": "http://cdn.musicjazzfree.com/domains/www.musicjazzfree.com/genre/jazz-fusion/jazz-fusion-2.jpg",
+        "thumb": {
+          "url": "http://cdn.musicjazzfree.com/domains/www.musicjazzfree.com/genre/jazz-fusion/jazz-fusion-2.jpg"
+        }
+      },
+      "slug": "Fire Jazz",
+      "website": "",
+      "twitter": "",
+      "facebook": "",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": null,
+          "title": "Jazz",
+          "description": "Jazz that'll set your soul on FIRE",
+          "slug": "Jazz",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "www.dfhgvhjbfejlgwwe.com",
+          "bitrate": 128,
+          "content_type": "audio/mpeg",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "created_at": "2019-01-18T03:34:52+01:00",
+      "updated_at": "2019-01-18T03:34:52+01:00"
     }
-  ],
-  "userSavedStations": []
+  ]
 }

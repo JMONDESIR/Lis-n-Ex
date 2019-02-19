@@ -1,0 +1,24 @@
+#mediaPlayer {
+
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+  margin: 0px auto;
+}
+
+#audioBox {
+width: 100%;
+height: 30px;
+float: left;
+}
+
+#analyser {
+width: 99%;
+height: 50px;
+background: #002D3C;
+float: left;
+}
+
+controls {
+  width: 90%;
+}

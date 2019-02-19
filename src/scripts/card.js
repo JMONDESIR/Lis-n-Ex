@@ -1,6 +1,7 @@
 import stationList from "./stationList"
 import API from "./stationCollection";
 import stationEditor from "./stationEditor"
+import Card from "../components/Card"
 
 const card = {
 
@@ -18,31 +19,33 @@ const card = {
     displayDescription.textContent = eachStation.description
     displayDescription.setAttribute("class", "displayDescription")
     displayGraphic.setAttribute("class", "displayGraphic")
-    displayGraphic.setAttribute("img", "eachStation.")
+    // displayGraphic.setAttribute("img", "eachStation.")
     displayCard.setAttribute("class", "displayCard")
     displayTitle.setAttribute("class", "displayTitle")
     displayTitle.textContent = eachStation.title
 
     // STATION VIEW BUTTON
     const stationViewButton = document.createElement("button")
-    stationViewButton.setAttribute("class", "stationViewButton")
-    stationViewButton.textContent = "VIEW STATIONS"
-    stationViewButton.addEventListener("click", () => {
-      console.log("The " + eachStation.title + " station")
-      console.log(eachStation.id)
+    stationViewButton.setAttribute("class", "button")
+    stationViewButton.setAttribute("id", eachStation.title)
+    stationViewButton.innerText = "VIEW STATIONS"
+
+    const config = {
+      editable: false,
+      removable: false
+    }
+
+    stationViewButton.addEventListener("click", (e) => {
+      const dashboardHeading = document.getElementById("dashboardHeading")
+      dashboardHeading.textContent = e.target.id.toUpperCase()
       dashboard.textContent = ""
-      displayTitle.textContent = "Test"
 
       API.getStationsByCategoryId(eachStation.id)
         .then(allStations => {
-          let stationFragment = document.createDocumentFragment()
-
-          allStations.forEach(eachStation => {
-            let stationCard = card.cardBuilder(eachStation)
-            stationFragment.appendChild(stationCard)
+          allStations.forEach(station => {
+            const newCard = Card(station, config)
+            dashboard.appendChild(newCard)
           })
-
-          dashboard.appendChild(stationFragment)
         })
     })
 
@@ -66,8 +69,7 @@ const card = {
     containerScreen.setAttribute("class", "title__gallery")
 
     // USER DISPLAY CARDS
-    // const displayCard = document.createElement("div")
-    const displayCard = document.createElement("button")
+    const displayCard = document.createElement("div")
     const displayTitle = document.createElement("h3")
     const displayGraphic = document.createElement("div")
     const thumbnail = document.createElement("img")
@@ -80,13 +82,32 @@ const card = {
     displayTitle.setAttribute("class", "displayTitle")
     displayTitle.textContent = station.name
 
+    // AUDIO MODULE
+
+    const audio = new Audio()
+    audio.src = station.streams[0].stream
+    audio.autoplay = false
+    let playing = false
+
     // USER STATION BUTTONS
     const playButton = document.createElement("button")
     playButton.setAttribute("class", "button")
     playButton.textContent = "PLAY"
+    playButton.addEventListener("click", () => {
+      //TEST IF PLAYING IS TRUTHY OR FALSY
+      if (playing) {
+        audio.pause()
+        playButton.textContent = "PLAY"
+      } else {
+        audio.play()
+        playButton.textContent = "PAUSE"
+      }
+      // NO MATTER WHAT, FLIP THE BOOL
+      playing = !playing
+    })
 
     const removeButton = document.createElement("button")
-    removeButton.setAttribute("class", "removeButton")
+    removeButton.setAttribute("class", "redButton")
     removeButton.textContent = "DELETE STATION"
     removeButton.addEventListener("click", () => API.removeStation(station.id)
       .then(res => {
@@ -115,5 +136,7 @@ const card = {
     return displayCard
   }
 }
+
+
 
 export default card

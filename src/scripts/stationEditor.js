@@ -12,6 +12,10 @@ const stationEditor = {
     edit_name.setAttribute("placeholder", station.name)
     edit_name.value = station.name
 
+    const edit_country = document.createElement("input")
+    edit_country.setAttribute("placeholder", station.country)
+    edit_country.value = station.country
+
     const edit_image = document.createElement("input")
     edit_image.setAttribute("placeholder", "paste new image URL")
     edit_image.value = station.image
@@ -44,6 +48,7 @@ const stationEditor = {
 
     container.appendChild(editBox)
     editBox.appendChild(edit_name)
+    editBox.appendChild(edit_country)
     editBox.appendChild(edit_image)
     editBox.appendChild(edit_genreTab)
     editBox.appendChild(edit_stream)
