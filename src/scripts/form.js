@@ -4,8 +4,6 @@ import stationList from "./stationList";
 const form = {
 
   formBuilder(userId) {
-
-    // PANEL
     const panelHead = document.querySelector("#panelHead")
     const panelHeading = document.createElement("h2")
     panelHeading.textContent = "ADD STATION"
@@ -96,7 +94,6 @@ const form = {
     let descriptionInput = document.querySelector("#description__input").value
 
     let newStation = {
-      id: 60585,
       name: nameInput,
       country: countryInput,
       image: {
@@ -128,18 +125,16 @@ const form = {
           listeners: 0
         }
       ],
-      created_at: "2019-01-18T03:34:52+01:00",
-      updated_at: "2019-01-18T03:34:52+01:00"
+      user_id: userId,
+      created_at: new Date(),
+      updated_at: new Date()
     }
 
     return API.postNewStation(newStation)
       .then(res => {
         document.querySelector("#container").innerHTML = " "
-        const containerHeading = document.createElement("h2")
-        containerHeading.textContent = "MY STATIONS"
-        container.appendChild(containerHeading)
 
-        stationList.showPlaylist()
+        stationList.showPlaylist(userId)
       })
   },
 }

@@ -2,27 +2,34 @@ import API from "./stationCollection";
 import stationList from "./stationList";
 
 const stationEditor = {
-  editForm(stationId, station) {
-    console.log(stationId)
-    console.log(station.name + " button clicked")
+  editForm(stationId, station, userId) {
+    console.log("Station ID", stationId)
     const container = document.querySelector("#container")
     const editBox = document.createElement("div")
 
     const edit_name = document.createElement("input")
     edit_name.setAttribute("placeholder", station.name)
-    edit_name.value = station.name
 
     const edit_country = document.createElement("input")
     edit_country.setAttribute("placeholder", station.country)
-    edit_country.value = station.country
 
     const edit_image = document.createElement("input")
-    edit_image.setAttribute("placeholder", "paste new image URL")
-    edit_image.value = station.image
+    edit_image.setAttribute("placeholder", "add image URL")
+
+    const edit_website = document.createElement("input")
+    edit_website.setAttribute("placeholder", station.website)
+
+    const edit_twitter = document.createElement("input")
+    edit_twitter.setAttribute("placeholder", station.twitter)
+
+    const edit_facebook = document.createElement("input")
+    edit_facebook.setAttribute("placeholder", station.facebook)
 
     const edit_stream = document.createElement("input")
-    edit_stream.setAttribute("placeholder", "URL to stream from")
-    edit_stream.value = station.url
+    edit_stream.setAttribute("placeholder", "Add stream URL")
+
+    const edit_description = document.createElement("textarea")
+    edit_description.setAttribute("id", "description__input")
 
     //==================GENRE EDIT SELECT TAB==========================
     const edit_genreTab = document.createElement("select")
@@ -50,40 +57,63 @@ const stationEditor = {
     editBox.appendChild(edit_name)
     editBox.appendChild(edit_country)
     editBox.appendChild(edit_image)
-    editBox.appendChild(edit_genreTab)
+    editBox.appendChild(edit_website)
+    editBox.appendChild(edit_twitter)
+    editBox.appendChild(edit_facebook)
     editBox.appendChild(edit_stream)
+    editBox.appendChild(edit_genreTab)
+    editBox.appendChild(edit_description)
     editBox.appendChild(updateButton)
 
     updateButton.addEventListener("click", () => {
-      let userChannelWindow = document.querySelector("#container")
-
       let editedStation = {
         name: edit_name.value,
-        image: edit_image.value,
-        genre: edit_genreTab.value,
-        url: edit_stream.value,
+        country: edit_country.value,
+        image: {
+          url: edit_image.value,
+          thumb: {
+            url: edit_image.value,
+          }
+        },
+        slug: edit_name.value,
+        website: edit_website.value,
+        twitter: edit_twitter.value,
+        facebook: edit_facebook.value,
+        total_listeners: 0,
+        categories: [
+          {
+            id: null,
+            title: edit_name.value,
+            description: edit_description.value,
+            slug: edit_genreTab.value,
+            ancestry: null
+          }
+        ],
+        streams: [
+          {
+            stream: edit_stream.value,
+            bitrate: 128,
+            content_type: "audio/mpeg",
+            status: 1,
+            listeners: 0
+          }
+        ],
+        user_id: userId,
+        created_at: new Date(),
+        updated_at: new Date()
       }
-      // Because we want to replace what is currently in the article element with the edit form, we clear out all children HTML elements in our targeted element before appending our edit form to it.
+
+      let userChannelWindow = document.querySelector("#container")
+
       while (userChannelWindow.firstChild) {
         userChannelWindow.removeChild(userChannelWindow.firstChild);
       }
-
-      API.editStation(station.id, editedStation)
+      API.editStation(stationId, editedStation)
         .then(response => {
-          // response.forEach(station => {
-          //   let cardContainer = document.createElement("div")
-          //   cardContainer.appendChild(edit_name)
-          //   cardContainer.appendChild(edit_image)
-          //   cardContainer.appendChild(edit_genreTab)
-          //   cardContainer.appendChild(edit_stream)
-          //   cardContainer.appendChild(updateButton)
-          //   userChannelWindow.appendChild(cardContainer)
-          // })
-          console.log(response)
-          stationList.showPlaylist()
+          console.log("response", response)
+          stationList.showPlaylist(userId)
         })
     })
-
   }
 }
 

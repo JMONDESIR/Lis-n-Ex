@@ -26,14 +26,12 @@ const stationList = {
         dashboard.appendChild(stationFragment)
       })
   },
-  showPlaylist() {
+  showPlaylist(userId) {
 
-
-
-    let userId = 1;
     API.getUserStations(userId)
       .then(savedStations => savedStations.forEach(station => {
-        return card.userStationBuilder(station)
+
+        return card.userStationBuilder(station, userId)
       }))
   }
 }

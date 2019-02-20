@@ -1,167 +1,103 @@
 {
   "users": [
     {
-      "id": 1,
-      "userName": "King Joel",
+      "userName": "Joel",
       "password": "joel",
       "email": "joel@mondesir.com",
-      "name": "Joel Mondesir"
+      "name": "Joel Mondesir",
+      "id": 1
     },
     {
-      "id": 2,
-      "userName": "Amy The Ace",
+      "userName": "Amy",
       "password": "amy",
       "email": "amy@turpin.com",
-      "name": "Amy Turpin"
+      "name": "Amy Turpin",
+      "id": 2
     },
     {
-      "id": 3,
-      "userName": "NeilAmos",
+      "userName": "Neil",
       "password": "neil",
       "email": "neil@amos.com",
-      "name": "Neil Amos"
+      "name": "Neil Amos",
+      "id": 3
+    },
+    {
+      "userName": "Cory",
+      "password": "cory",
+      "email": "cory@harkins.com",
+      "name": "Cory Harkins",
+      "id": 7
+    },
+    {
+      "userName": "Christine",
+      "password": "christine",
+      "email": "Chric@harkins.net",
+      "name": "Christine Harkins",
+      "id": 8
+    },
+    {
+      "userName": "James",
+      "password": "james",
+      "email": "james@giantpeach.org",
+      "name": "James Peach",
+      "id": 9
+    },
+    {
+      "userName": "James",
+      "password": "james",
+      "email": "james@giantpeach.org",
+      "name": "James Peach",
+      "id": 10
     }
   ],
   "userSavedStations": [
     {
-      "id": 60907,
-      "name": "Radyo Maestro",
-      "country": "TR",
+      "name": "Rock Dragon Radio",
+      "country": "UK",
       "image": {
-        "url": "https://img.dirble.com/station/60907/a52f69e3-d871-499d-97cf-d9ceb81d60f5.jpg",
+        "url": "https://i.pinimg.com/originals/4e/5e/49/4e5e499a424c3e416ca98d4de9691bc7.jpg",
         "thumb": {
-          "url": "https://img.dirble.com/station/60907/thumb_a52f69e3-d871-499d-97cf-d9ceb81d60f5.jpg"
+          "url": "https://i.pinimg.com/originals/4e/5e/49/4e5e499a424c3e416ca98d4de9691bc7.jpg"
         }
       },
-      "slug": "radyo-maestro",
-      "website": "http://www.radyomaestro.com/",
-      "twitter": "https://twitter.com/maestro_radyo",
-      "facebook": "https://www.facebook.com/radyomaestroantalya",
+      "slug": "Rock Dragon Radio",
+      "website": "www.amazingdragonmusic.uk",
+      "twitter": "https://twitter.com/ragingdragons?lang=en",
+      "facebook": "https://www.facebook.com/RagingDragonsofChathamKent/",
       "total_listeners": 0,
       "categories": [
         {
-          "id": 11,
-          "title": "Classical",
-          "description": "Classical music such as Mozart and Beethoven but also Greig and others.",
-          "slug": "classical",
+          "id": null,
+          "title": "Rock Dragon Radio",
+          "description": "undefined",
+          "slug": "Rap",
           "ancestry": null
-        },
-        {
-          "id": 12,
-          "title": "Jazz",
-          "description": "The classical music - Jazz.",
-          "slug": "jazz",
-          "ancestry": null
-        },
-        {
-          "id": 25,
-          "title": "Mainstream Jazz",
-          "description": "",
-          "slug": "mainstream-jazz",
-          "ancestry": "12"
-        },
-        {
-          "id": 26,
-          "title": "Classical period music",
-          "description": "",
-          "slug": "classical-period-music",
-          "ancestry": "11"
         }
       ],
       "streams": [
         {
-          "stream": "http://151.80.4.46:7444/index.html?sid=1",
-          "bitrate": 0,
-          "content_type": "?",
-          "status": 0,
-          "listeners": 0
-        },
-        {
-          "stream": "http://radyomaestro.kesintisizyayin.com:7444",
+          "stream": "http://streaming5.elitecomunicacion.es:8102/stream",
           "bitrate": 128,
           "content_type": "audio/mpeg",
           "status": 1,
           "listeners": 0
         }
       ],
-      "created_at": "2019-02-09T22:42:36Z",
-      "updated_at": "2019-02-09T22:42:36Z"
+      "user_id": 1,
+      "created_at": "2019-02-19T17:50:02.811Z",
+      "updated_at": "2019-02-19T17:50:02.811Z",
+      "id": 2
     },
     {
-      "id": 60892,
-      "name": "TRSV Radio Hits",
-      "country": "US",
+      "name": "Rabbit Radio",
+      "country": "",
       "image": {
-        "url": "https://img.dirble.com/station/60892/3ac72793-63eb-4c6d-bb29-159848cbcb7b.jpg",
+        "url": "http://www.rirabbits.org/wp-content/uploads/2018/04/bunny-rabbit.jpg",
         "thumb": {
-          "url": "https://img.dirble.com/station/60892/thumb_3ac72793-63eb-4c6d-bb29-159848cbcb7b.jpg"
+          "url": "http://www.rirabbits.org/wp-content/uploads/2018/04/bunny-rabbit.jpg"
         }
       },
-      "slug": "trsv-radio-hits",
-      "website": "https://trsv.me",
-      "twitter": "@trsvny",
-      "facebook": "https://www.facebook.com/trsvny/",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": 2,
-          "title": "Rock",
-          "description": "simple rock. from elvis to metallica and like hardrock as iron maiden.",
-          "slug": "rock",
-          "ancestry": null
-        },
-        {
-          "id": 5,
-          "title": "Pop",
-          "description": "stations that normally play pop-music",
-          "slug": "pop",
-          "ancestry": null
-        },
-        {
-          "id": 10,
-          "title": "Rap",
-          "description": "50 Cent and more.",
-          "slug": "rap",
-          "ancestry": null
-        },
-        {
-          "id": 12,
-          "title": "Jazz",
-          "description": "The classical music - Jazz.",
-          "slug": "jazz",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "https://streaming.radionomy.com/TRSVRadioHits",
-          "bitrate": 128,
-          "content_type": "audio/mpeg",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "created_at": "2019-02-08T17:04:52+01:00",
-      "updated_at": "2019-02-18T13:06:51+01:00"
-    },
-    {
-      "name": "joel",
-      "image": "www.image.com",
-      "genre": "Trance",
-      "url": "vrfjvbljerw",
-      "id": 60908
-    },
-    {
-      "id": 60585,
-      "name": "Fire Jazz",
-      "country": "US",
-      "image": {
-        "url": "http://cdn.musicjazzfree.com/domains/www.musicjazzfree.com/genre/jazz-fusion/jazz-fusion-2.jpg",
-        "thumb": {
-          "url": "http://cdn.musicjazzfree.com/domains/www.musicjazzfree.com/genre/jazz-fusion/jazz-fusion-2.jpg"
-        }
-      },
-      "slug": "Fire Jazz",
+      "slug": "Rabbit Radio",
       "website": "",
       "twitter": "",
       "facebook": "",
@@ -169,23 +105,172 @@
       "categories": [
         {
           "id": null,
-          "title": "Jazz",
-          "description": "Jazz that'll set your soul on FIRE",
-          "slug": "Jazz",
+          "title": "Rabbit Radio",
+          "description": "",
+          "slug": "Rap",
           "ancestry": null
         }
       ],
       "streams": [
         {
-          "stream": "www.dfhgvhjbfejlgwwe.com",
+          "stream": "",
           "bitrate": 128,
           "content_type": "audio/mpeg",
           "status": 1,
           "listeners": 0
         }
       ],
-      "created_at": "2019-01-18T03:34:52+01:00",
-      "updated_at": "2019-01-18T03:34:52+01:00"
+      "user_id": 1,
+      "created_at": "2019-02-20T02:54:42.168Z",
+      "updated_at": "2019-02-20T02:54:42.168Z",
+      "id": 3
+    },
+    {
+      "name": "Mix Tape Plus",
+      "country": "US",
+      "image": {
+        "url": "https://img.dirble.com/station/60686/7951d6d0-d751-40fb-a9b4-f4247a5eab2f.jpg",
+        "thumb": {
+          "url": "https://img.dirble.com/station/60686/7951d6d0-d751-40fb-a9b4-f4247a5eab2f.jpg"
+        }
+      },
+      "slug": "Mix Tape Plus",
+      "website": "https://www.bangin832.com/",
+      "twitter": "https://twitter.com/hashtag/bangin832?src=hash",
+      "facebook": "https://www.facebook.com/bangin832/",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": null,
+          "title": "Mix Tape Plus",
+          "description": "undefined",
+          "slug": "Rap",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "https://usa1.fastcast4u.com/proxy/grbmedia?mp=/1",
+          "bitrate": 128,
+          "content_type": "audio/mpeg",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "user_id": 2,
+      "created_at": "2019-02-19T21:30:42.153Z",
+      "updated_at": "2019-02-19T21:30:42.154Z",
+      "id": 4
+    },
+    {
+      "name": "",
+      "country": "",
+      "image": {
+        "url": "",
+        "thumb": {
+          "url": ""
+        }
+      },
+      "slug": "",
+      "website": "",
+      "twitter": "",
+      "facebook": "",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": null,
+          "title": "",
+          "description": "",
+          "slug": "Rap",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "",
+          "bitrate": 128,
+          "content_type": "audio/mpeg",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "user_id": 2,
+      "created_at": "2019-02-19T21:50:23.572Z",
+      "updated_at": "2019-02-19T21:50:23.572Z",
+      "id": 5
+    },
+    {
+      "name": "Moody Monday Radio",
+      "country": "US",
+      "image": {
+        "url": "https://www.handletheheat.com/wp-content/uploads/2014/10/Ultimate-Muffins-Square-550x550.jpg",
+        "thumb": {
+          "url": "https://www.handletheheat.com/wp-content/uploads/2014/10/Ultimate-Muffins-Square-550x550.jpg"
+        }
+      },
+      "slug": "Moody Monday Radio",
+      "website": "google",
+      "twitter": "twitter",
+      "facebook": "facebook",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": null,
+          "title": "Baroque",
+          "description": "Cute Monday music",
+          "slug": "Baroque",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "www.stream.com",
+          "bitrate": 128,
+          "content_type": "audio/mpeg",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "created_at": "2019-02-20T03:23:29.529Z",
+      "updated_at": "2019-02-20T03:23:29.529Z",
+      "id": 6
+    },
+    {
+      "name": "ass",
+      "country": "ass",
+      "image": {
+        "url": "ass.com",
+        "thumb": {
+          "url": "ass.com"
+        }
+      },
+      "slug": "ass",
+      "website": "ass",
+      "twitter": "ass",
+      "facebook": "ass",
+      "total_listeners": 0,
+      "categories": [
+        {
+          "id": null,
+          "title": "Trance",
+          "description": "",
+          "slug": "Trance",
+          "ancestry": null
+        }
+      ],
+      "streams": [
+        {
+          "stream": "ass",
+          "bitrate": 128,
+          "content_type": "audio/mpeg",
+          "status": 1,
+          "listeners": 0
+        }
+      ],
+      "user_id": 9,
+      "created_at": "2019-02-20T03:31:04.167Z",
+      "updated_at": "2019-02-20T03:31:04.167Z",
+      "id": 7
     }
   ]
 }

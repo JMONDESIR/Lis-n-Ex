@@ -61,7 +61,7 @@ const card = {
 
     return displayCard
   },
-  userStationBuilder(station) {
+  userStationBuilder(station, userId) {
     console.log(station)
     const url = station && station.image || "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png"
     const container = document.querySelector("#container")
@@ -73,7 +73,7 @@ const card = {
     const displayTitle = document.createElement("h3")
     const displayGraphic = document.createElement("div")
     const thumbnail = document.createElement("img")
-    thumbnail.setAttribute("src", url)
+    thumbnail.setAttribute("src", station.image.thumb.url)
     thumbnail.setAttribute("class", "thumb")
 
     displayGraphic.setAttribute("class", "displayGraphic")
@@ -112,18 +112,15 @@ const card = {
     removeButton.addEventListener("click", () => API.removeStation(station.id)
       .then(res => {
         document.querySelector("#container").innerHTML = " "
-        const containerHeading = document.createElement("h2")
-        containerHeading.textContent = "MY STATIONS"
-        container.appendChild(containerHeading)
 
-        stationList.showPlaylist()
+        stationList.showPlaylist(userId)
       })
     )
 
     const editButton = document.createElement("button")
     editButton.setAttribute("class", "button")
     editButton.textContent = "EDIT"
-    editButton.addEventListener("click", () => stationEditor.editForm(station.id, station))
+    editButton.addEventListener("click", () => stationEditor.editForm(station.id, station, userId))
 
 
     container.appendChild(containerScreen)
