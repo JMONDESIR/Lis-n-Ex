@@ -36,6 +36,7 @@ const authorization = {
     loginWrapper.appendChild(formWrapper)
     loginWrapper.appendChild(buttonWrapper)
 
+    // LOGIN BUTTON EVENT
     loginButton.addEventListener("click", () => {
       user.parentNode.removeChild(user)
       pw.parentNode.removeChild(pw)
@@ -43,7 +44,6 @@ const authorization = {
       loginButton.textContent = "LOG OUT"
       loginButton.setAttribute("id", "logout")
       loginButton.setAttribute("class", "redButton")
-
       loginButton.addEventListener("click", () => {
         location.reload()
       })
@@ -86,6 +86,14 @@ const authorization = {
           .then(response => {
 
             authorization.mountApp(response.id)
+            registerButton.parentNode.removeChild(registerButton)
+            loginButton.textContent = "LOG OUT"
+            loginButton.setAttribute("id", "logout")
+            loginButton.setAttribute("class", "redButton")
+            formWrapper.innerHTML = ""
+            loginButton.addEventListener("click", () => {
+              location.reload()
+            })
           })
       })
     })
@@ -100,7 +108,3 @@ const authorization = {
 }
 
 export default authorization
-
-// 2. VALIDATE USER INPUT
-  // 2a. IF SUCCESSFUL, DESTROY SIGN IN AND DISPLAY APP
-  //2b. IF UNSUCCESSFUL, DISPLAY WARNING

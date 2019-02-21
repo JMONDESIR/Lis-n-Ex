@@ -43,11 +43,39 @@
       "id": 9
     },
     {
-      "userName": "James",
-      "password": "james",
-      "email": "james@giantpeach.org",
-      "name": "James Peach",
-      "id": 10
+      "userName": "M. Bison",
+      "password": "mbison",
+      "email": "M.Bison@shadowloo.com",
+      "name": "Michael Bison",
+      "id": 15
+    },
+    {
+      "userName": "Ken",
+      "password": "ken",
+      "email": "ken@capcom.com",
+      "name": "Ken Maters",
+      "id": 16
+    },
+    {
+      "userName": "Ryu",
+      "password": "ryu",
+      "email": "ryu@capcom.com",
+      "name": "Ryu",
+      "id": 17
+    },
+    {
+      "userName": "Chun-Li",
+      "password": "chunli",
+      "email": "chunli@capcom.com",
+      "name": "Chun-Li",
+      "id": 18
+    },
+    {
+      "userName": "Vega",
+      "password": "vega",
+      "email": "vega@capcom.com",
+      "name": "Vega",
+      "id": 19
     }
   ],
   "userSavedStations": [
@@ -89,15 +117,15 @@
       "id": 2
     },
     {
-      "name": "Rabbit Radio",
+      "name": "Bunny Rabbit Radio",
       "country": "",
       "image": {
-        "url": "http://www.rirabbits.org/wp-content/uploads/2018/04/bunny-rabbit.jpg",
+        "url": "https://www.thoughtco.com/thmb/Xl1Gsme2HyW4DmOryJRGsmfo65U=/1261x1191/filters:no_upscale():max_bytes(150000):strip_icc()/bunnycrop-56a26cc95f9b58b7d0ca1faf.jpg",
         "thumb": {
-          "url": "http://www.rirabbits.org/wp-content/uploads/2018/04/bunny-rabbit.jpg"
+          "url": "https://www.thoughtco.com/thmb/Xl1Gsme2HyW4DmOryJRGsmfo65U=/1261x1191/filters:no_upscale():max_bytes(150000):strip_icc()/bunnycrop-56a26cc95f9b58b7d0ca1faf.jpg"
         }
       },
-      "slug": "Rabbit Radio",
+      "slug": "Bunny Rabbit Radio",
       "website": "",
       "twitter": "",
       "facebook": "",
@@ -105,7 +133,7 @@
       "categories": [
         {
           "id": null,
-          "title": "Rabbit Radio",
+          "title": "Bunny Rabbit Radio",
           "description": "",
           "slug": "Rap",
           "ancestry": null
@@ -121,8 +149,8 @@
         }
       ],
       "user_id": 1,
-      "created_at": "2019-02-20T02:54:42.168Z",
-      "updated_at": "2019-02-20T02:54:42.168Z",
+      "created_at": "2019-02-21T16:21:56.112Z",
+      "updated_at": "2019-02-21T16:21:56.112Z",
       "id": 3
     },
     {
@@ -163,15 +191,15 @@
       "id": 4
     },
     {
-      "name": "",
+      "name": "Talk Radio",
       "country": "",
       "image": {
-        "url": "",
+        "url": "https://theray.org/wp-content/uploads/2019/01/talkRADIO_stacked.png",
         "thumb": {
-          "url": ""
+          "url": "https://theray.org/wp-content/uploads/2019/01/talkRADIO_stacked.png"
         }
       },
-      "slug": "",
+      "slug": "Talk Radio",
       "website": "",
       "twitter": "",
       "facebook": "",
@@ -179,9 +207,9 @@
       "categories": [
         {
           "id": null,
-          "title": "",
+          "title": "Talk Radio",
           "description": "",
-          "slug": "Rap",
+          "slug": "Talk & Speech",
           "ancestry": null
         }
       ],
@@ -195,8 +223,8 @@
         }
       ],
       "user_id": 2,
-      "created_at": "2019-02-19T21:50:23.572Z",
-      "updated_at": "2019-02-19T21:50:23.572Z",
+      "created_at": "2019-02-21T16:28:58.888Z",
+      "updated_at": "2019-02-21T16:28:58.888Z",
       "id": 5
     },
     {

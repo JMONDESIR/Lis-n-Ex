@@ -62,7 +62,6 @@ const card = {
     return displayCard
   },
   userStationBuilder(station, userId) {
-    console.log(station)
     const url = station && station.image || "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/480px-No_image_available.svg.png"
     const container = document.querySelector("#container")
     const containerScreen = document.createElement("div")
@@ -83,7 +82,6 @@ const card = {
     displayTitle.textContent = station.name
 
     // AUDIO MODULE
-
     const audio = new Audio()
     audio.src = station.streams[0].stream
     audio.autoplay = false
@@ -94,7 +92,6 @@ const card = {
     playButton.setAttribute("class", "button")
     playButton.textContent = "PLAY"
     playButton.addEventListener("click", () => {
-      //TEST IF PLAYING IS TRUTHY OR FALSY
       if (playing) {
         audio.pause()
         playButton.textContent = "PLAY"
@@ -102,7 +99,7 @@ const card = {
         audio.play()
         playButton.textContent = "PAUSE"
       }
-      // NO MATTER WHAT, FLIP THE BOOL
+      // FLIP THE BOOL
       playing = !playing
     })
 

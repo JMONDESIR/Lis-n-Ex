@@ -53,6 +53,10 @@ const stationEditor = {
     updateButton.setAttribute("class", "button")
     updateButton.textContent = "UPDATE"
 
+    const cancelButton = document.createElement("button")
+    cancelButton.setAttribute("class", "redButton")
+    cancelButton.textContent = "CANCEL"
+
     container.appendChild(editBox)
     editBox.appendChild(edit_name)
     editBox.appendChild(edit_country)
@@ -64,6 +68,7 @@ const stationEditor = {
     editBox.appendChild(edit_genreTab)
     editBox.appendChild(edit_description)
     editBox.appendChild(updateButton)
+    editBox.appendChild(cancelButton)
 
     updateButton.addEventListener("click", () => {
       let editedStation = {
@@ -113,6 +118,10 @@ const stationEditor = {
           console.log("response", response)
           stationList.showPlaylist(userId)
         })
+    })
+
+    cancelButton.addEventListener("click", () => {
+      container.removeChild(editBox)
     })
   }
 }
