@@ -5,9 +5,12 @@ const form = {
 
   formBuilder(userId) {
     const panelHead = document.querySelector("#panelHead")
+    const headingContainer = document.createElement("div")
+    headingContainer.setAttribute("class", "headingContainer")
     const panelHeading = document.createElement("h2")
     panelHeading.textContent = "ADD STATION"
-    panelHead.appendChild(panelHeading)
+    panelHead.appendChild(headingContainer)
+    headingContainer.appendChild(panelHeading)
 
     const panel = document.querySelector("#panel")
     const panelScreen = document.createElement("div")

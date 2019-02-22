@@ -3,8 +3,7 @@ import card from "./card"
 
 const stationList = {
   showCards() {
-
-    // DASHBOARD & CASE
+    // DASHBOARD
     const dashboardHead = document.querySelector("#dashboardHead")
     const dashboardHeading = document.createElement("h2")
     dashboardHeading.textContent = "VIEW STATIONS"
@@ -17,7 +16,7 @@ const stationList = {
         let stationFragment = document.createDocumentFragment()
 
         allStations.forEach(eachStation => {
-          let stationCard = card.cardBuilder(eachStation)
+          let stationCard = card.cardBuilder(eachStation, true)
           stationFragment.appendChild(stationCard)
         })
 

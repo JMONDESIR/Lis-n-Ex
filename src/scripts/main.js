@@ -1,6 +1,5 @@
-import stationList from "./stationList"
-import form from "./form";
 import authorization from "./authorization"
+import mediaPlayer from "./mediaPlayer";
 
 const { generateLogInForm, loginHandler } = authorization
 
@@ -15,6 +14,6 @@ logo.setAttribute("class", "logo")
 logoWrapper.appendChild(logo)
 
 // CONTAINER
-
+mediaPlayer.media()
 generateLogInForm()
 

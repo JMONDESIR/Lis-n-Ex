@@ -15,6 +15,7 @@ const authorization = {
 
     const pw = document.createElement("input")
     pw.setAttribute("placeholder", "PASSWORD")
+    pw.setAttribute("type", "password")
     pw.setAttribute("id", "password")
 
     const buttonWrapper = document.createElement("div")
@@ -43,20 +44,26 @@ const authorization = {
       registerButton.parentNode.removeChild(registerButton)
       loginButton.textContent = "LOG OUT"
       loginButton.setAttribute("id", "logout")
-      loginButton.setAttribute("class", "redButton")
+      loginButton.setAttribute("class", "button")
       loginButton.addEventListener("click", () => {
-        location.reload()
+        sessionStorage.clear()
+        loginWrapper.removeChild(formWrapper)
+        loginWrapper.removeChild(buttonWrapper)
+        authorization.destroyApp()
+        authorization.generateLogInForm()
       })
       API.getUsers()
         .then(res => {
 
           const returnUser = res.filter(person => person.userName.toLowerCase() === user.value.toLowerCase() && person.password === pw.value)
-
           const loginObject = { userId: returnUser[0].id, valid: returnUser.length > 0 }
-
+          console.log(res)
           if (loginObject.valid === true) {
             authorization.mountApp(loginObject.userId)
           }
+          sessionStorage.setItem("userName", returnUser[0].userName)
+          sessionStorage.setItem("userId", returnUser[0].id)
+          console.log(returnUser[0].userName)
         })
     })
 
@@ -73,7 +80,7 @@ const authorization = {
       formWrapper.appendChild(name)
 
       registerButton.setAttribute("id", "submit")
-      registerButton.setAttribute("class", "redButton")
+      registerButton.setAttribute("class", "button")
       registerButton.textContent = "SUBMIT"
       registerButton.addEventListener("click", () => {
         const userObject = {
@@ -89,16 +96,32 @@ const authorization = {
             registerButton.parentNode.removeChild(registerButton)
             loginButton.textContent = "LOG OUT"
             loginButton.setAttribute("id", "logout")
-            loginButton.setAttribute("class", "redButton")
+            loginButton.setAttribute("class", "button")
             formWrapper.innerHTML = ""
-            loginButton.addEventListener("click", () => {
-              location.reload()
-            })
+
           })
+
       })
     })
   },
 
+  destroyApp() {
+    const dashboardHead = document.getElementById("dashboardHead")
+    const dashboard = document.getElementById("dashboard")
+    const panelHead = document.getElementById("panelHead")
+    const panel = document.getElementById("panel")
+    const containerHead = document.getElementById("containerHead")
+    const container = document.getElementById("container")
+    const footer = document.getElementById("footer")
+
+    dashboardHead.innerHTML = ""
+    dashboard.innerHTML = ""
+    panelHead.innerHTML = ""
+    panel.innerHTML = ""
+    containerHead.innerHTML = ""
+    container.innerHTML = ""
+    footer.innerHTML = ""
+  },
   mountApp(userId) {
     stationList.showCards(userId)
     form.formBuilder(userId)

@@ -1,4 +1,4 @@
-#mediaPlayer {
+#mp3_player {
 
   width: 100%;
   height: 80px;
@@ -6,7 +6,7 @@
   margin: 0px auto;
 }
 
-#audioBox {
+#audio_box {
 width: 100%;
 height: 30px;
 float: left;

@@ -5,7 +5,7 @@ import Card from "../components/Card"
 
 const card = {
 
-  cardBuilder(eachStation) {
+  cardBuilder(eachStation, isCategory) {
     // DASHBOARD AND GALLERY
     const dashboard = document.querySelector("#dashboard")
     const dashboardScreen = document.createElement("div")
@@ -19,10 +19,14 @@ const card = {
     displayDescription.textContent = eachStation.description
     displayDescription.setAttribute("class", "displayDescription")
     displayGraphic.setAttribute("class", "displayGraphic")
-    // displayGraphic.setAttribute("img", "eachStation.")
     displayCard.setAttribute("class", "displayCard")
     displayTitle.setAttribute("class", "displayTitle")
     displayTitle.textContent = eachStation.title
+
+    const imageForCategories = document.createElement("img")
+    if (isCategory) {
+      imageForCategories.setAttribute("src", find url for this basic image)
+    }
 
     // STATION VIEW BUTTON
     const stationViewButton = document.createElement("button")
@@ -104,7 +108,7 @@ const card = {
     })
 
     const removeButton = document.createElement("button")
-    removeButton.setAttribute("class", "redButton")
+    removeButton.setAttribute("class", "button")
     removeButton.textContent = "DELETE STATION"
     removeButton.addEventListener("click", () => API.removeStation(station.id)
       .then(res => {

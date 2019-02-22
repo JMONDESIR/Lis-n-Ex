@@ -45,7 +45,7 @@
     {
       "userName": "M. Bison",
       "password": "mbison",
-      "email": "M.Bison@shadowloo.com",
+      "email": "M.Bison@capcom.com",
       "name": "Michael Bison",
       "id": 15
     },
@@ -76,11 +76,18 @@
       "email": "vega@capcom.com",
       "name": "Vega",
       "id": 19
+    },
+    {
+      "userName": "Blanka",
+      "password": "blanka",
+      "email": "blanka@capcom.com",
+      "name": "Blanka",
+      "id": 20
     }
   ],
   "userSavedStations": [
     {
-      "name": "Rock Dragon Radio",
+      "name": "Rock Dragon",
       "country": "UK",
       "image": {
         "url": "https://i.pinimg.com/originals/4e/5e/49/4e5e499a424c3e416ca98d4de9691bc7.jpg",
@@ -88,53 +95,16 @@
           "url": "https://i.pinimg.com/originals/4e/5e/49/4e5e499a424c3e416ca98d4de9691bc7.jpg"
         }
       },
-      "slug": "Rock Dragon Radio",
-      "website": "www.amazingdragonmusic.uk",
-      "twitter": "https://twitter.com/ragingdragons?lang=en",
-      "facebook": "https://www.facebook.com/RagingDragonsofChathamKent/",
+      "slug": "Rock Dragon",
+      "website": "www.rockdragon.com",
+      "twitter": "https://twitter.com/hashtag/bangin832?src=hash",
+      "facebook": "https://www.facebook.com/bangin832/",
       "total_listeners": 0,
       "categories": [
         {
           "id": null,
-          "title": "Rock Dragon Radio",
+          "title": "Rock Dragon",
           "description": "undefined",
-          "slug": "Rap",
-          "ancestry": null
-        }
-      ],
-      "streams": [
-        {
-          "stream": "http://streaming5.elitecomunicacion.es:8102/stream",
-          "bitrate": 128,
-          "content_type": "audio/mpeg",
-          "status": 1,
-          "listeners": 0
-        }
-      ],
-      "user_id": 1,
-      "created_at": "2019-02-19T17:50:02.811Z",
-      "updated_at": "2019-02-19T17:50:02.811Z",
-      "id": 2
-    },
-    {
-      "name": "Bunny Rabbit Radio",
-      "country": "",
-      "image": {
-        "url": "https://www.thoughtco.com/thmb/Xl1Gsme2HyW4DmOryJRGsmfo65U=/1261x1191/filters:no_upscale():max_bytes(150000):strip_icc()/bunnycrop-56a26cc95f9b58b7d0ca1faf.jpg",
-        "thumb": {
-          "url": "https://www.thoughtco.com/thmb/Xl1Gsme2HyW4DmOryJRGsmfo65U=/1261x1191/filters:no_upscale():max_bytes(150000):strip_icc()/bunnycrop-56a26cc95f9b58b7d0ca1faf.jpg"
-        }
-      },
-      "slug": "Bunny Rabbit Radio",
-      "website": "",
-      "twitter": "",
-      "facebook": "",
-      "total_listeners": 0,
-      "categories": [
-        {
-          "id": null,
-          "title": "Bunny Rabbit Radio",
-          "description": "",
           "slug": "Rap",
           "ancestry": null
         }
@@ -149,9 +119,9 @@
         }
       ],
       "user_id": 1,
-      "created_at": "2019-02-21T16:21:56.112Z",
-      "updated_at": "2019-02-21T16:21:56.112Z",
-      "id": 3
+      "created_at": "2019-02-21T22:01:46.037Z",
+      "updated_at": "2019-02-21T22:01:46.037Z",
+      "id": 2
     },
     {
       "name": "Mix Tape Plus",

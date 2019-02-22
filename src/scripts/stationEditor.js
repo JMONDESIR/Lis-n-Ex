@@ -5,30 +5,31 @@ const stationEditor = {
   editForm(stationId, station, userId) {
     console.log("Station ID", stationId)
     const container = document.querySelector("#container")
-    const editBox = document.createElement("div")
+    const editBox = document.createElement("fieldset")
 
     const edit_name = document.createElement("input")
-    edit_name.setAttribute("placeholder", station.name)
+    edit_name.value = station.name
 
     const edit_country = document.createElement("input")
-    edit_country.setAttribute("placeholder", station.country)
+    edit_country.value = station.country
 
     const edit_image = document.createElement("input")
-    edit_image.setAttribute("placeholder", "add image URL")
+    edit_image.value = station.image.thumb.url
 
     const edit_website = document.createElement("input")
-    edit_website.setAttribute("placeholder", station.website)
+    edit_website.value = station.website
 
     const edit_twitter = document.createElement("input")
-    edit_twitter.setAttribute("placeholder", station.twitter)
+    edit_twitter.value = station.twitter
 
     const edit_facebook = document.createElement("input")
-    edit_facebook.setAttribute("placeholder", station.facebook)
+    edit_facebook.value = station.facebook
 
     const edit_stream = document.createElement("input")
-    edit_stream.setAttribute("placeholder", "Add stream URL")
+    edit_stream.value = station.streams[0].stream
 
     const edit_description = document.createElement("textarea")
+    edit_description.value = station.categories.description
     edit_description.setAttribute("id", "description__input")
 
     //==================GENRE EDIT SELECT TAB==========================
@@ -54,7 +55,7 @@ const stationEditor = {
     updateButton.textContent = "UPDATE"
 
     const cancelButton = document.createElement("button")
-    cancelButton.setAttribute("class", "redButton")
+    cancelButton.setAttribute("class", "button")
     cancelButton.textContent = "CANCEL"
 
     container.appendChild(editBox)
@@ -72,7 +73,7 @@ const stationEditor = {
 
     updateButton.addEventListener("click", () => {
       let editedStation = {
-        name: edit_name.value,
+        name: edit_name.value || station.name,
         country: edit_country.value,
         image: {
           url: edit_image.value,
